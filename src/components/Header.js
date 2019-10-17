@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import justinimg from '../assets/justinimg.JPG'
 
 const Header = (props) => {
-    
+
 
     return (
         <div>
@@ -24,8 +24,9 @@ const StyledHeader = styled.div`
         display: flex;
         justify-content: space-around;
         font-size: 2rem;
-        padding: 4rem 20% 0 20%;
+        padding: 4rem 35% 0 35%;
         background-color: #1F1F1F;
+        
 
         a {
             text-decoration: none;
