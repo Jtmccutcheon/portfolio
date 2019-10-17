@@ -9,7 +9,7 @@ import About from './components/About';
 function App(props) {
 
   useEffect(() => {
-    props.history.push('/about')
+    // props.history.push('/about')
   }, [])
 
   return (
