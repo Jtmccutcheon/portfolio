@@ -1,17 +1,16 @@
 
-import React, { useState, useEffect } from 'react'
-import { Menu, Segment } from 'semantic-ui-react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import justinimg from '../assets/justinimg.JPG'
 
-const Header = (props) => {
+const Header = () => {
 
 
     return (
         <div>
             <StyledHeader>
-                <NavLink to='/about' >about</NavLink>
+                <NavLink to='/about'>about</NavLink>
                 <NavLink to='/skills'>skills</NavLink>
                 <NavLink to='/projects'>projects</NavLink>
             </StyledHeader>

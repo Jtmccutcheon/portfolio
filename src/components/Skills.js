@@ -12,9 +12,9 @@ const Skills = () => {
         justify-content: center;
             
         .row {
+            /* border: 1px solid red; */
             margin-right: 0;
             width: 18rem;
-            border: 1px solid red;
             padding: 5rem 0;
 
             h3 {

@@ -1,12 +1,16 @@
 import React from 'react';
-
+import styled from 'styled-components'
 
 const Projects = () => {
     return (
-        <div>
+        <StyledProjects>
             <h1>Projects Component</h1>
-        </div>
+        </StyledProjects>
     )
 }
+
+const StyledProjects = styled.div`
+    height: 47.5vh
+`;
 
 export default Projects
