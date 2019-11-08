@@ -8,7 +8,6 @@ const Skills = () => {
     const StyledSkills = styled.div`
         margin: 3rem auto;
         display: flex;
-        
         justify-content: center;
             
         .row {
@@ -23,7 +22,6 @@ const Skills = () => {
                         font-size: 3rem;
                     }
             }
-
         }
     `;
 
