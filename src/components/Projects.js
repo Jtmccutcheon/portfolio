@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import img1 from '../assets/tipseaseimg.png'
+import tipseaseLogo from '../assets/tipseaseimg.png'
 
 const Projects = () => {
     return (
@@ -10,21 +10,20 @@ const Projects = () => {
                 <div className="card">
                     <h3>Project Title</h3>
                     <div className="card-content">
-                        <img src={img1} alt="Tipsease" />
+                        <img src={tipseaseLogo} alt="Tipsease" />
                         <p>Project Details Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <button>View Project</button>
+                    <button>View Repo</button>
                 </div>
                 <div className="card">
                     <h3>Project Title</h3>
                     <div className="card-content">
-                        <img src={img1} alt="Tipsease" />
+                        <img src={tipseaseLogo} alt="Tipsease" />
                         <p>Project Details Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <button>View Project</button>
+                    <button>View Repo</button>
                 </div>
             </section>
-
         </StyledProjects>
     )
 }
@@ -80,7 +79,7 @@ const StyledProjects = styled.div`
             border: 2px solid white;
             transition-duration: .5s;
         }
-        button:hover { /*jean you can nest these btw. I know*/
+        button:hover {
             border-color: #1F1F1F;
             color: #1F1F1F;
             background-color: white;
