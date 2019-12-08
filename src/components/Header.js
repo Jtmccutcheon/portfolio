@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import justinimg from '../../assets/justinimg.JPG';
+import justinimg from '../assets/justinimg.JPG';
 
 const Header = () => {
 	return (
@@ -30,7 +30,8 @@ const StyledHeader = styled.div`
 		font-weight: 900;
 		opacity: 0.5;
 		&:hover {
-			color: orange;
+			color: white;
+			opacity: 1;
 		}
 	}
 
