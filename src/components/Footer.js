@@ -19,7 +19,7 @@ const StyledFooter = styled.div`
     text-align:center;
     align-items: center;
     padding: 4rem 35% 1rem 35%;
-    background-color: #1F1F1F;
+    background-color: #1C2A35;
     font-size: 2rem;
     justify-content: center;
 

@@ -34,9 +34,10 @@ const StyledProjects = styled.div`
     section {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
-        // justify-content: space-between;
+        /* justify-content: space-around; */
+        justify-content: center;
         
     }
     .card {
@@ -89,9 +90,9 @@ const StyledProjects = styled.div`
     .card:hover {
         box-shadow: 10px 10px 8px lightgray;
         -ms-transform: translate(-2px, -2px); /* IE 9 */
-        -webkit-transform: translate(-2px, -2px); /* Safari 3-8 */
-        transform:translate(-2px, -2px);
-        transition-duration: .09s;
+        -webkit-transform: translate(-1rem, -1rem); /* Safari 3-8 */
+        transform:translate(-1.2rem, -1.2rem);
+        transition-duration: .2s;
     }
 `;
 
