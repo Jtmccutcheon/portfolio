@@ -22,6 +22,7 @@ const StyledHeader = styled.div`
 	font-size: 2rem;
 	padding: 4rem 35% 0 35%;
 	background-color: #1c2a35;
+	margin: 0 auto;
 
 	a {
 		text-decoration: none;
