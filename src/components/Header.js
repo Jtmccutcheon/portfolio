@@ -6,7 +6,6 @@ import justinimg from '../assets/justinimg.JPG'
 
 const Header = () => {
 
-
     return (
         <div>
             <StyledHeader>
@@ -35,9 +34,7 @@ const StyledHeader = styled.div`
             opacity: .5;
         }
 
-        a:first-child {
-            text-decoration: none;
-        }
+    
         a.active {
             text-decoration: underline orange;
             transition-duration: 1s;
@@ -46,6 +43,7 @@ const StyledHeader = styled.div`
     `;
 
 const StyledImg = styled.img`
+        /* margin: 0 auto; */
         margin: 2rem 0 0 0;
         width: 20rem;
         border-radius: 50%;
