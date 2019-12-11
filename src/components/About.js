@@ -16,6 +16,9 @@ const About = () => {
 const StyledAbout = styled.div`
     height: 47.5vh; /* keeps footer in the same place on all pages during development */
     /* background-color: red; */
+    h1 {
+        
+    }
 `;
 
 export default About
