@@ -41,7 +41,7 @@ const About = () => {
 };
 
 const StyledAbout = styled.div`
-	/* height: 47.5vh; keeps footer in the same place on all pages during development */
+	height: 100vh;
 	/* background-color: red; */
 	width: 60%;
 	margin: 0 auto;
