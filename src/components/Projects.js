@@ -2,8 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import tipseaseLogo from '../assets/tipseaseimg.png';
 import gitstatus from '../assets/gitstatus.png';
+import { Icon } from 'semantic-ui-react';
 
-const Projects = () => {
+const Projects = props => {
+	const toSkills = () => {
+		props.history.push('/skills');
+		window.scrollTo(0, 0);
+	};
 	return (
 		<StyledProjects>
 			<h2>Projects I've contributed to</h2>
@@ -60,6 +65,7 @@ const Projects = () => {
 					<button>View Repo</button>
 				</div>
 			</section>
+			{/* <Icon onClick={toSkills} className='arrow-left' name='arrow left'></Icon> */}
 		</StyledProjects>
 	);
 };
@@ -70,21 +76,37 @@ const StyledProjects = styled.div`
 	h2 {
 		margin: 0;
 		margin-top: 5rem;
-		/* padding-top: 5rem; */
+		padding-top: 5rem;
 	}
 	section {
-		/* width: 60%; */
 		display: flex;
-		/* flex-direction: column; */
 		align-items: center;
-		/* justify-content: space-around; */
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+	.arrow-left {
+		font-size: 3rem;
+		background-color: #1c2a35;
+		position: relative;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 50px;
+		padding: 26px;
+		top: -37.5rem;
+		left: -53rem;
+		/* align-self: flex-start; */
+		&:hover {
+			background-color: #5d97c9;
+			cursor: pointer;
+		}
+	}
+
 	.card {
 		border: 1px solid #1c2a35;
 		padding-top: 2%;
-		max-width: 515px;
+		max-width: 500px;
 		width: 75%;
 		margin: 2.5%;
 		border-radius: 2%;

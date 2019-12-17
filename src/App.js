@@ -22,7 +22,7 @@ function App(props) {
 					<Route path='/projects' component={Projects} />
 				</Switch>
 			</Router>
-			<Footer />
+			<Footer {...props} />
 		</div>
 	);
 }
