@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+//images
 import apolloimg from '../assets/apolloimg';
 import css from '../assets/css.png';
 import GitHub from '../assets/GitHub.png';
@@ -14,6 +15,7 @@ import sql3 from '../assets/sql3.png';
 import heroku from '../assets/heroku.png';
 
 const Skills = props => {
+	// card objects
 	let skillCards = [
 		{
 			title: 'Html5',
@@ -81,10 +83,12 @@ const Skills = props => {
 		},
 	];
 
+	// inline style line 105
 	const imgSize = {
 		width: '64px',
 	};
 
+	// returning the header as a function to keep it above  the skill cards
 	const skillHeader = () => {
 		return (
 			<div className='skill-header'>
@@ -92,6 +96,8 @@ const Skills = props => {
 			</div>
 		);
 	};
+
+	// function to map out the skill card object
 	const skillFunc = () => {
 		return skillCards.map(card => {
 			return (
@@ -104,6 +110,7 @@ const Skills = props => {
 		});
 	};
 
+	// jsx that calls the above functions
 	return (
 		<StyledSkills>
 			{skillHeader()}
@@ -112,47 +119,45 @@ const Skills = props => {
 	);
 };
 
+// css starts here
 const StyledSkills = styled.div`
+	/* body-container */
 	margin: 0 auto;
 	margin-bottom: 5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 61%;
+	/* h2 */
 	.skill-header {
 		width: 100%;
 		margin: 0;
 		padding-top: 5rem;
 		padding-bottom: 2.5rem;
 	}
+	/* card styles */
 	.cards {
 		width: 15rem;
 		border: 1px solid #1c2a35;
 		margin: 1rem;
 		padding: 1rem;
 		border-radius: 14px;
-		p {
-			cursor: default;
-		}
-		h1 {
-			cursor: default;
-		}
 		&:hover {
-			trasition: 0.6s;
+			trasition: 1s;
 			transform: scale(1.2);
-			animation: glowing 1300ms infinite;
+			animation: glowing 2000ms infinite;
 			@keyframes glowing {
 				0% {
 					background-color: #1c2a35;
-					box-shadow: 0 0 5px #1c2a35;
+					box-shadow: 0 0 5px #bf9737;
 				}
 				50% {
 					background-color: #1c2a35;
-					box-shadow: 0 0 20px #1c2a35;
+					box-shadow: 0 0 20px #bf9737;
 				}
 				100% {
 					background-color: #1c2a35;
-					box-shadow: 0 0 5px #1c2a35;
+					box-shadow: 0 0 5px #bf9737;
 				}
 			}
 		}
