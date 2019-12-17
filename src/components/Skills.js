@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Icon } from 'semantic-ui-react';
 
 import apolloimg from '../assets/apolloimg';
 import css from '../assets/css.png';
@@ -15,7 +14,6 @@ import sql3 from '../assets/sql3.png';
 import heroku from '../assets/heroku.png';
 
 const Skills = props => {
-	console.log(props);
 	let skillCards = [
 		{
 			title: 'Html5',
@@ -85,7 +83,6 @@ const Skills = props => {
 
 	const imgSize = {
 		width: '64px',
-		// height: '64px',
 	};
 
 	const skillHeader = () => {
@@ -97,92 +94,34 @@ const Skills = props => {
 	};
 	const skillFunc = () => {
 		return skillCards.map(card => {
-			// console.log(card);
 			return (
 				<div className='cards'>
 					<img src={card.img} alt='technologies' style={imgSize} />
 					<h4>{card.title}</h4>
-
 					<p>{card.description}</p>
 				</div>
 			);
 		});
 	};
 
-	const toProjects = () => {
-		props.history.push('/projects');
-		window.scrollTo(0, 0);
-	};
-	const toAbout = () => {
-		props.history.push('/about');
-		window.scrollTo(0, 0);
-	};
-
 	return (
 		<StyledSkills>
 			{skillHeader()}
 			{skillFunc()}
-			{/* <Icon onClick={toAbout} className='arrow-left' name='arrow left'></Icon>
-			<Icon
-				onClick={toProjects}
-				className='arrow-right'
-				name='arrow right'></Icon> */}
 		</StyledSkills>
 	);
 };
 
 const StyledSkills = styled.div`
 	margin: 0 auto;
-	/* margin-top: 5rem; */
 	margin-bottom: 5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
-	.arrow-right {
-		font-size: 3rem;
-		background-color: #1c2a35;
-		position: relative;
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 50px;
-		padding: 26px;
-		top: -22.5rem;
-		left: 16.9rem;
-		/* align-self: flex-end; */
-		&:hover {
-			background-color: #5d97c9;
-			cursor: pointer;
-		}
-	}
-
-	.arrow-left {
-		font-size: 3rem;
-		background-color: #1c2a35;
-		position: relative;
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 50px;
-		padding: 26px;
-		top: -9.5rem;
-		left: -66rem;
-		/* align-self: flex-start; */
-		&:hover {
-			background-color: #5d97c9;
-			cursor: pointer;
-		}
-	}
-
-	/* text-align: center; */
 	width: 61%;
 	.skill-header {
 		width: 100%;
 		margin: 0;
-
 		padding-top: 5rem;
 		padding-bottom: 2.5rem;
 	}
@@ -192,7 +131,6 @@ const StyledSkills = styled.div`
 		margin: 1rem;
 		padding: 1rem;
 		border-radius: 14px;
-
 		p {
 			cursor: default;
 		}

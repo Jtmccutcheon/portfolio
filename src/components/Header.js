@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import justinimg from '../assets/justinimg.JPG';
 
 const Header = () => {
 	return (
@@ -11,7 +10,6 @@ const Header = () => {
 				<NavLink to='/skills'>skills</NavLink>
 				<NavLink to='/projects'>projects</NavLink>
 			</StyledHeader>
-			{/* <StyledImg src={justinimg} /> */}
 		</div>
 	);
 };
@@ -42,12 +40,5 @@ const StyledHeader = styled.div`
 		transition-duration: 1s;
 		opacity: 1;
 	}
-`;
-
-const StyledImg = styled.img`
-	/* margin: 0 auto; */
-	margin: 2rem 0 0 0;
-	width: 20rem;
-	border-radius: 50%;
 `;
 export default Header;

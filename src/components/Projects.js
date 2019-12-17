@@ -2,13 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import tipseaseLogo from '../assets/tipseaseimg.png';
 import gitstatus from '../assets/gitstatus.png';
-import { Icon } from 'semantic-ui-react';
 
 const Projects = props => {
-	const toSkills = () => {
-		props.history.push('/skills');
-		window.scrollTo(0, 0);
-	};
 	return (
 		<StyledProjects>
 			<h2>Projects I've contributed to</h2>
@@ -84,24 +79,6 @@ const StyledProjects = styled.div`
 		justify-content: center;
 		flex-wrap: wrap;
 	}
-	.arrow-left {
-		font-size: 3rem;
-		background-color: #1c2a35;
-		position: relative;
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 50px;
-		padding: 26px;
-		top: -37.5rem;
-		left: -53rem;
-		/* align-self: flex-start; */
-		&:hover {
-			background-color: #5d97c9;
-			cursor: pointer;
-		}
-	}
 
 	.card {
 		border: 1px solid #1c2a35;
@@ -113,7 +90,15 @@ const StyledProjects = styled.div`
 		background-color: #1c2a35;
 		box-shadow: 5px 5px 8px #171e24;
 		transition-duration: 0.09s;
-
+		&:hover {
+			.card:hover {
+				box-shadow: 10px 10px 8px #1c2a35;
+				-ms-transform: translate(-2px, -2px); /* IE 9 */
+				-webkit-transform: translate(-1rem, -1rem); /* Safari 3-8 */
+				transform: translate(-1.2rem, -1.2rem);
+				transition-duration: 0.2s;
+			}
+		}
 		h3 {
 			color: lightgray;
 		}
@@ -150,13 +135,6 @@ const StyledProjects = styled.div`
 			transition-duration: 0.5s;
 			cursor: pointer;
 		}
-	}
-	.card:hover {
-		box-shadow: 10px 10px 8px #1c2a35;
-		-ms-transform: translate(-2px, -2px); /* IE 9 */
-		-webkit-transform: translate(-1rem, -1rem); /* Safari 3-8 */
-		transform: translate(-1.2rem, -1.2rem);
-		transition-duration: 0.2s;
 	}
 `;
 
