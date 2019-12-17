@@ -9,6 +9,9 @@ import jsImg from '../assets/js.png';
 import reactimg from '../assets/reactimg.png';
 import resticon from '../assets/resticon.png';
 import nodeIcon from '../assets/node-icon.png';
+import graphql from '../assets/graphql.png';
+import sql3 from '../assets/sql3.png';
+import heroku from '../assets/heroku.png';
 
 const Skills = () => {
 	let skillCards = [
@@ -59,11 +62,36 @@ const Skills = () => {
 			description:
 				'Experience working with online cloud version control utilizing seperate production, staging, development, feature branches',
 		},
+		{
+			title: 'Graphql',
+			img: graphql,
+			description:
+				'Experience building graphql apis writing resovers, queries, mutations',
+		},
+		{
+			title: 'Sqlite 3',
+			img: sql3,
+			description: 'Experience using sqlite3 databases tables, queries, joins',
+		},
+		{
+			title: 'Heroku',
+			img: heroku,
+			description:
+				'Experince with live deployment/configuration using heroku linked with a github repository master branch',
+		},
 	];
 
 	const imgSize = {
 		width: '64px',
 		// height: '64px',
+	};
+
+	const skillHeader = () => {
+		return (
+			<div className='skill-header'>
+				<h2>Proficient with these technologies</h2>
+			</div>
+		);
 	};
 	const skillFunc = () => {
 		return skillCards.map(card => {
@@ -79,24 +107,38 @@ const Skills = () => {
 		});
 	};
 
-	return <StyledSkills>{skillFunc()}</StyledSkills>;
+	return (
+		<StyledSkills>
+			{skillHeader()}
+			{skillFunc()}
+		</StyledSkills>
+	);
 };
 
 const StyledSkills = styled.div`
 	margin: 0 auto;
-	margin-top: 5rem;
+	/* margin-top: 5rem; */
 	margin-bottom: 5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
 	/* text-align: center; */
-	width: 72%;
+	width: 61%;
+	.skill-header {
+		width: 100%;
+		margin: 0;
+
+		padding-top: 5rem;
+		padding-bottom: 2.5rem;
+	}
 	.cards {
 		width: 15rem;
 		border: 1px solid #1c2a35;
 		margin: 1rem;
 		padding: 1rem;
 		border-radius: 14px;
+
 		p {
 			cursor: default;
 		}

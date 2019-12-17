@@ -34,14 +34,14 @@ const About = () => {
 				</div>
 			</section>
 			<section>
-				<h4>Currently seeking employment and freelance work</h4>
+				{/* <h4>Currently seeking employment and freelance work</h4> */}
 			</section>
 		</StyledAbout>
 	);
 };
 
 const StyledAbout = styled.div`
-	/* height: 47.5vh; keeps footer in the same place on all pages during development */
+	height: 100vh;
 	/* background-color: red; */
 	width: 60%;
 	margin: 0 auto;
