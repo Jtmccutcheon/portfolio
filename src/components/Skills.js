@@ -92,12 +92,35 @@ const StyledSkills = styled.div`
 	/* text-align: center; */
 	width: 72%;
 	.cards {
-		width: 23%;
+		width: 15rem;
 		border: 1px solid #1c2a35;
 		margin: 1rem;
 		padding: 1rem;
 		border-radius: 14px;
-		
+		p {
+			cursor: default;
+		}
+		h1 {
+			cursor: default;
+		}
+		&:hover {
+			trasition: 0.6s;
+			transform: scale(1.2);
+			animation: glowing 1300ms infinite;
+			@keyframes glowing {
+				0% {
+					background-color: #1c2a35;
+					box-shadow: 0 0 5px #1c2a35;
+				}
+				50% {
+					background-color: #1c2a35;
+					box-shadow: 0 0 20px #1c2a35;
+				}
+				100% {
+					background-color: #1c2a35;
+					box-shadow: 0 0 5px #1c2a35;
+				}
+			}
 		}
 	}
 `;
