@@ -34,7 +34,7 @@ const About = () => {
 				</div>
 			</section>
 			<section>
-				<h4>Currently seeking employment and freelance work</h4>
+				{/* <h4>Currently seeking employment and freelance work</h4> */}
 			</section>
 		</StyledAbout>
 	);

@@ -90,7 +90,7 @@ const StyledSkills = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	/* text-align: center; */
-	width: 72%;
+	width: 61%;
 	.cards {
 		width: 15rem;
 		border: 1px solid #1c2a35;
