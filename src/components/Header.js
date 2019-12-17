@@ -11,7 +11,7 @@ const Header = () => {
 				<NavLink to='/skills'>skills</NavLink>
 				<NavLink to='/projects'>projects</NavLink>
 			</StyledHeader>
-			<StyledImg src={justinimg} />
+			{/* <StyledImg src={justinimg} /> */}
 		</div>
 	);
 };
