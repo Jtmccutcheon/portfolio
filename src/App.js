@@ -8,9 +8,9 @@ import About from './components/About';
 import Footer from './components/Footer';
 
 function App(props) {
-	// useEffect(() => {
-	//   props.history.push('/about')
-	// }, [props.history])
+	useEffect(() => {
+		props.history.push('/about');
+	}, [props.history]);
 
 	return (
 		<div className='App'>
