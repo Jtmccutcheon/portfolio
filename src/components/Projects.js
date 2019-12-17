@@ -70,7 +70,7 @@ const StyledProjects = styled.div`
 	h2 {
 		margin: 0;
 		margin-top: 5rem;
-		padding-top: 5rem;
+		/* padding-top: 5rem; */
 	}
 	section {
 		/* width: 60%; */
