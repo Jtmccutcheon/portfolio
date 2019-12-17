@@ -4,31 +4,25 @@ import styled from 'styled-components';
 import 'semantic-ui-css/semantic.min.css';
 
 const Footer = props => {
-	console.log(props);
 	const arrowRight = () => {
 		if (props.location.pathname === '/about') {
 			props.history.push('skills');
-			// window.scrollTo(0, 0);
 		} else if (props.location.pathname === '/skills') {
 			props.history.push('projects');
-			// window.scrollTo(0, 0);
 		} else if (props.location.pathname === '/projects') {
 			props.history.push('about');
-			// window.scrollTo(0, 0);
 		}
 	};
 	const arrowLeft = () => {
 		if (props.location.pathname === '/about') {
 			props.history.push('projects');
-			// window.scrollTo(0, 0);
 		} else if (props.location.pathname === '/projects') {
 			props.history.push('skills');
-			// window.scrollTo(0, 0);
 		} else if (props.location.pathname === '/skills') {
 			props.history.push('about');
-			// window.scrollTo(0, 0);
 		}
 	};
+
 	return (
 		<>
 			<Arrow className='arrow'>

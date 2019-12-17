@@ -2,14 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import justinimg from '../assets/justinimg.JPG';
 import lambda from '../assets/lambda.png';
-import { Icon } from 'semantic-ui-react';
 
 const About = props => {
-	console.log(props);
-	const toSkills = () => {
-		props.history.push('/skills');
-		window.scrollTo(0, 0);
-	};
 	return (
 		<StyledAbout>
 			<section className='top-content'>
@@ -17,10 +11,10 @@ const About = props => {
 					<h1>Justin McCutcheon</h1>
 					<h2>Full Stack Web Developer</h2>
 				</div>
-				<img src={justinimg} />
+				<img src={justinimg} alt='headshot' />
 			</section>
 			<section className='middle-content'>
-				<img src={lambda} />
+				<img src={lambda} alt='lambdalogo' />
 				<div>
 					<h3>
 						Hello, my name is Justin McCutcheon. Welcome to my portfolio
@@ -39,20 +33,12 @@ const About = props => {
 					</p>
 				</div>
 			</section>
-			{/* <Icon
-				onClick={toSkills}
-				className='arrow-right'
-				name='arrow right'></Icon> */}
-			<section>
-				{/* <h4>Currently seeking employment and freelance work</h4> */}
-			</section>
 		</StyledAbout>
 	);
 };
 
 const StyledAbout = styled.div`
 	height: 100vh;
-	/* background-color: red; */
 	width: 60%;
 	margin: 0 auto;
 	display: flex;
@@ -87,25 +73,6 @@ const StyledAbout = styled.div`
 			width: 20rem;
 			margin: 3.5rem 7rem;
 		}
-	}
-	.arrow-right {
-		font-size: 3rem;
-		background-color: #1c2a35;
-		position: relative;
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 50px;
-		padding: 26px;
-		top: -17rem;
-		left: 9rem;
-		align-self: flex-end;
-		&:hover {
-			background-color: #5D97C9;
-			cursor: pointer;
-		}
-
 	}
 `;
 
