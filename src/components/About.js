@@ -2,8 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import justinimg from '../assets/justinimg.JPG';
 import lambda from '../assets/lambda.png';
+import { Icon } from 'semantic-ui-react';
 
-const About = () => {
+const About = props => {
+	console.log(props);
+	const toSkills = () => {
+		props.history.push('/skills');
+		window.scrollTo(0, 0);
+	};
 	return (
 		<StyledAbout>
 			<section className='top-content'>
@@ -33,6 +39,10 @@ const About = () => {
 					</p>
 				</div>
 			</section>
+			{/* <Icon
+				onClick={toSkills}
+				className='arrow-right'
+				name='arrow right'></Icon> */}
 			<section>
 				{/* <h4>Currently seeking employment and freelance work</h4> */}
 			</section>
@@ -45,6 +55,8 @@ const StyledAbout = styled.div`
 	/* background-color: red; */
 	width: 60%;
 	margin: 0 auto;
+	display: flex;
+	flex-direction column;
 	.top-content {
 		display: flex;
 		justify-content: space-around;
@@ -75,6 +87,25 @@ const StyledAbout = styled.div`
 			width: 20rem;
 			margin: 3.5rem 7rem;
 		}
+	}
+	.arrow-right {
+		font-size: 3rem;
+		background-color: #1c2a35;
+		position: relative;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 50px;
+		padding: 26px;
+		top: -17rem;
+		left: 9rem;
+		align-self: flex-end;
+		&:hover {
+			background-color: #5D97C9;
+			cursor: pointer;
+		}
+
 	}
 `;
 
