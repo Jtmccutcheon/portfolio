@@ -1,9 +1,12 @@
 import React from 'react';
+
+//libraries
 import { Icon } from 'semantic-ui-react';
 import styled from 'styled-components';
 import 'semantic-ui-css/semantic.min.css';
 
 const Footer = props => {
+	// onClick handlers
 	const arrowRight = () => {
 		if (props.location.pathname === '/about') {
 			props.history.push('skills');
@@ -23,8 +26,10 @@ const Footer = props => {
 		}
 	};
 
+	//jsx starts here vvvvv
 	return (
 		<>
+			{/* left and right arrows */}
 			<Arrow className='arrow'>
 				<Icon
 					onClick={arrowLeft}
@@ -35,6 +40,8 @@ const Footer = props => {
 					className='arrow-right'
 					name='arrow right'></Icon>
 			</Arrow>
+
+			{/* footer links */}
 			<StyledFooter>
 				<a
 					href='https://www.linkedin.com/in/justin-mccutcheon-667b5a152/'
@@ -59,12 +66,18 @@ const Footer = props => {
 	);
 };
 
+// css starts here vvvv
+
 const Arrow = styled.div`
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	height: 5rem;
+	padding: 3rem;
+	margin-bottom: 6rem;
+
 	.arrow-right {
-		margin: 3rem 6rem 3rem 3rem;
+		/* margin: 3rem 6rem 3rem 3rem; */
 		font-size: 3rem;
 		background-color: #1c2a35;
 		position: relative;
@@ -80,7 +93,7 @@ const Arrow = styled.div`
 		}
 	}
 	.arrow-left {
-		margin: 3rem 3rem 3rem 6rem;
+		/* margin: 3rem 3rem 3rem 6rem; */
 		font-size: 3rem;
 		background-color: #1c2a35;
 		position: relative;
@@ -98,6 +111,7 @@ const Arrow = styled.div`
 `;
 
 const StyledFooter = styled.div`
+	/* margin-top: 4rem; */
 	display: flex;
 	text-align: center;
 	align-items: center;
@@ -105,6 +119,7 @@ const StyledFooter = styled.div`
 	background-color: #1c2a35;
 	font-size: 2rem;
 	justify-content: center;
+	/* max-height: 5rem; */
 
 	a {
 		text-decoration: none;

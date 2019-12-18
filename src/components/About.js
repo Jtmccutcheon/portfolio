@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+//images
 import justinimg from '../assets/justinimg.JPG';
 import lambda from '../assets/lambda.png';
 
@@ -38,40 +39,59 @@ const About = props => {
 };
 
 const StyledAbout = styled.div`
+
+	/* body container */
 	height: 100vh;
 	width: 60%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction column;
+	/* name title banner img */
 	.top-content {
 		display: flex;
 		justify-content: space-around;
-		margin: 3rem;
+		/* margin: 3rem; */
 		padding: 3rem;
+		@media screen and (max-width: 1520px) {
+			align-items: center;
+			flex-direction: column-reverse;
+		}
 		div {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 		}
 		img {
+			align-self: center;
 			width: 20rem;
 			border-radius: 50%;
 		}
 	}
+	/* lambda logo and and story */
 	.middle-content {
 		display: flex;
 		justify-content: space-around;
-		margin: 3rem;
+		/* margin: 3rem; */
 		padding: 3rem;
+		overflow: visible;
+		@media screen and (max-width: 1520px) {
+			align-items: center;
+			flex-direction: column;
+		}
+		img {
+			max-width: 22rem;
+			max-height: 10rem;
+			margin: 3.5rem 7rem;
+			
+		}
 		div {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			text-align: left;
-		}
-		img {
-			width: 20rem;
-			margin: 3.5rem 7rem;
+				@media screen and (max-width: 1520px) {
+					text-align: center;
+			}
 		}
 	}
 `;
