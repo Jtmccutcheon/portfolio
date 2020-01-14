@@ -105,7 +105,7 @@ const StyledAbout = styled.div`
 			width: 100%;
 			display: flex;
 			flex-direction: column;
-			margin: 3rem;
+			margin: 3rem 0;
 		.form-start{
 			width: 50%;
 			display: flex;
