@@ -120,12 +120,18 @@ const StyledAbout = styled.div`
 				border-style: none;
 				padding: .5rem 1rem;
 				border-radius: 14px;
+				&:focus {
+				outline: none;
+			}
 			}
 			textarea{ 
 				margin: 2rem;
 				border-style: none;
 				padding: .5rem 1rem;
 				border-radius: 14px;
+				&:focus {
+				outline: none;
+			}
 			}
 			a {
 				margin: 2rem;
