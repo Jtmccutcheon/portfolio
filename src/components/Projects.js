@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import tipseaseLogo from '../assets/tipseaseimg.png';
 import gitstatus from '../assets/gitstatus.png';
 import qualityhub from '../assets/qualityhub.png';
+import interviewq from '../assets/interviewq.png';
 
 const Projects = props => {
 	return (
@@ -20,10 +21,10 @@ const Projects = props => {
 						</p>
 					</div>
 					<button>
-						<a href='#'>View on Github</a>
+						<a href='https://github.com/sep2019-bw-tipsease' target='_blank'rel="noopener noreferrer">View on Github</a>
 					</button>
 					<button>
-						<a href='#'>View Live Site</a>
+						<a href='https://besttipsease-app.netlify.com/' target='_blank'rel="noopener noreferrer">View Live Site</a>
 					</button>
 				</div>
 				<div className='card'>
@@ -37,10 +38,10 @@ const Projects = props => {
 						</p>
 					</div>
 					<button>
-						<a href='#'>View on Github</a>
+						<a href='https://github.com/Build-GitHub-User-Breakdown'target='_blank'rel="noopener noreferrer">View on Github</a>
 					</button>
 					<button>
-						<a href='#'>View Live Site</a>
+						<a href='https://git-status-app.netlify.com/'target='_blank'rel="noopener noreferrer">View Live Site</a>
 					</button>
 				</div>
 				<div className='card'>
@@ -53,16 +54,16 @@ const Projects = props => {
 						</p>
 					</div>
 					<button>
-						<a href='#'>View on Github</a>
+						<a href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'target='_blank'rel="noopener noreferrer">View on Github</a>
 					</button>
 					<button>
-						<a href='#'>View Live Site</a>
+						<a href='https://explorequality.com/'target='_blank'rel="noopener noreferrer">View Live Site</a>
 					</button>
 				</div>
 				<div className='card'>
 					<h3>InterviewQ</h3>
 					<div className='card-content'>
-						<img src={gitstatus} alt='InterviwQ' />
+						<img src={interviewq} alt='InterviwQ' />
 						<p>
 							InterviewQ is a platform to connect job seekers and intview coachs
 							to set up paid mock interviews with in app video calling as well
@@ -70,10 +71,10 @@ const Projects = props => {
 						</p>
 					</div>
 					<button>
-						<a href='#'>View on Github</a>
+						<a href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'target='_blank'rel="noopener noreferrer">View on Github</a>
 					</button>
 					<button>
-						<a href='https://www.explorequality.com/'>View Live Site</a>
+						<a href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'target='_blank'rel="noopener noreferrer">View Live Site</a>
 					</button>
 				</div>
 			</section>
@@ -84,6 +85,9 @@ const Projects = props => {
 const StyledProjects = styled.div`
 	/* width: 60%; */
 	margin: 0 8rem;
+	@media screen and (max-width: 790px) {
+		margin: 0;
+	}
 
 	h2 {
 		margin: 0;
@@ -109,6 +113,9 @@ const StyledProjects = styled.div`
 		transition-duration: 0.09s;
 		@media screen and (max-width: 1352px) {
 			max-width: 450px;
+		}
+		@media screen and (max-width: 420px) {
+			width: 100%;
 		}
 		&:hover {
 			box-shadow: 10px 10px 8px #bf9737;

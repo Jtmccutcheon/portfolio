@@ -75,6 +75,9 @@ const Arrow = styled.div`
 	height: 5rem;
 	padding: 3rem;
 	margin-bottom: 6rem;
+	@media screen and (max-width: 500px) {
+			display: none;
+		}
 
 	.arrow-right {
 		/* margin: 3rem 6rem 3rem 3rem; */
