@@ -129,6 +129,7 @@ const StyledFooter = styled.div`
 		color: #fff;
 		font-weight: 900;
 		opacity: 0.5;
+		margin: 0;
 	}
 `;
 
