@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ReactContactForm from 'react-mail-form';
 //images
 import justinimg from '../assets/justinimg.JPG';
 import lambda from '../assets/lambda.png';
@@ -28,11 +29,16 @@ const About = props => {
 					</p>
 					<p>
 						Lambda School is where I acquired the skills and confidence to work
-						towards a better future. Over their 9 month bootcamp where I spent
+						towards a better future. Over their 9 month bootcamp, I spent
 						well over 40 hours a week fully immersed in learning, reading, and
 						developing web applications.
 					</p>
 				</div>
+			</section>
+			<section className='bottom-form'>
+				<h3 className='bottom-title'>Contact me with job offers, questions, comments, feedback, trolls, etc...</h3>
+				<ReactContactForm className='form-start' to="jt.mccutcheon@live.com" titlePlaceholder='subject' contentsPlaceholder='your message' >
+				</ReactContactForm>
 			</section>
 		</StyledAbout>
 	);
@@ -41,7 +47,7 @@ const About = props => {
 const StyledAbout = styled.div`
 
 	/* body container */
-	height: 100vh;
+	/* height: 100vh; */
 	width: 60%;
 	margin: 0 auto;
 	display: flex;
@@ -91,6 +97,46 @@ const StyledAbout = styled.div`
 			text-align: left;
 				@media screen and (max-width: 1520px) {
 					text-align: center;
+			}
+		}
+	}
+
+	.bottom-form {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin: 3rem;
+		.form-start{
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-self: center;
+			margin: 1rem;
+			@media screen and (max-width: 550px) {
+				width: 100%;
+			}	
+			input {
+				margin: 2rem;
+				border-style: none;
+				padding: .5rem 1rem;
+				border-radius: 14px;
+			}
+			textarea{ 
+				margin: 2rem;
+				border-style: none;
+				padding: .5rem 1rem;
+				border-radius: 14px;
+			}
+			a {
+				margin: 2rem;
+				border: 1px solid #1c2a35;
+				border-radius: 14px;
+				padding: 1rem 0;
+				color: white;
+				background-color: #5d97c9;
+				&:hover {
+					background-color: #171E24
+				}
 			}
 		}
 	}
