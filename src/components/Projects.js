@@ -21,10 +21,20 @@ const Projects = props => {
 						</p>
 					</div>
 					<button>
-						<a href='https://github.com/sep2019-bw-tipsease' target='_blank'rel="noopener noreferrer">View on Github</a>
+						<a
+							href='https://github.com/sep2019-bw-tipsease'
+							target='_blank'
+							rel='noopener noreferrer'>
+							View on Github
+						</a>
 					</button>
 					<button>
-						<a href='https://besttipsease-app.netlify.com/' target='_blank'rel="noopener noreferrer">View Live Site</a>
+						<a
+							href='https://besttipsease-app.netlify.com/'
+							target='_blank'
+							rel='noopener noreferrer'>
+							View Live Site
+						</a>
 					</button>
 				</div>
 				<div className='card'>
@@ -38,10 +48,20 @@ const Projects = props => {
 						</p>
 					</div>
 					<button>
-						<a href='https://github.com/Build-GitHub-User-Breakdown'target='_blank'rel="noopener noreferrer">View on Github</a>
+						<a
+							href='https://github.com/Build-GitHub-User-Breakdown'
+							target='_blank'
+							rel='noopener noreferrer'>
+							View on Github
+						</a>
 					</button>
 					<button>
-						<a href='https://git-status-app.netlify.com/'target='_blank'rel="noopener noreferrer">View Live Site</a>
+						<a
+							href='https://git-status-app.netlify.com/'
+							target='_blank'
+							rel='noopener noreferrer'>
+							View Live Site
+						</a>
 					</button>
 				</div>
 				<div className='card'>
@@ -54,10 +74,20 @@ const Projects = props => {
 						</p>
 					</div>
 					<button>
-						<a href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'target='_blank'rel="noopener noreferrer">View on Github</a>
+						<a
+							href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'
+							target='_blank'
+							rel='noopener noreferrer'>
+							View on Github
+						</a>
 					</button>
 					<button>
-						<a href='https://explorequality.com/'target='_blank'rel="noopener noreferrer">View Live Site</a>
+						<a
+							href='https://explorequality.com/'
+							target='_blank'
+							rel='noopener noreferrer'>
+							View Live Site
+						</a>
 					</button>
 				</div>
 				<div className='card'>
@@ -71,10 +101,20 @@ const Projects = props => {
 						</p>
 					</div>
 					<button>
-						<a href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'target='_blank'rel="noopener noreferrer">View on Github</a>
+						<a
+							href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'
+							target='_blank'
+							rel='noopener noreferrer'>
+							View on Github
+						</a>
 					</button>
 					<button>
-						<a href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'target='_blank'rel="noopener noreferrer">View Live Site</a>
+						<a
+							href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'
+							target='_blank'
+							rel='noopener noreferrer'>
+							View Live Site
+						</a>
 					</button>
 				</div>
 			</section>
@@ -91,7 +131,7 @@ const StyledProjects = styled.div`
 
 	h2 {
 		margin: 0;
-		margin-top: 5rem;
+		/* margin-top: 5rem; */
 		padding-top: 5rem;
 	}
 	section {
