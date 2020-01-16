@@ -129,6 +129,9 @@ const StyledSkills = styled.div`
 	justify-content: center;
 	width: 61%;
 	/* h2 */
+	@media screen and (max-width: 800px) {
+		width: 100%;
+	}
 	.skill-header {
 		width: 100%;
 		margin: 0;
