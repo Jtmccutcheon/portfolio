@@ -29,16 +29,22 @@ const About = props => {
 					</p>
 					<p>
 						Lambda School is where I acquired the skills and confidence to work
-						towards a better future. Over their 9 month bootcamp, I spent
-						well over 40 hours a week fully immersed in learning, reading, and
+						towards a better future. Over their 9 month bootcamp, I spent well
+						over 40 hours a week fully immersed in learning, reading, and
 						developing web applications.
 					</p>
 				</div>
 			</section>
 			<section className='bottom-form'>
-				<h3 className='bottom-title'>Contact me with job offers, questions, comments, feedback, trolls, etc...</h3>
-				<ReactContactForm className='form-start' to="jt.mccutcheon@live.com" titlePlaceholder='subject' contentsPlaceholder='your message' >
-				</ReactContactForm>
+				<h3 className='bottom-title'>
+					Contact me with job offers, questions, comments, feedback, trolls,
+					etc...
+				</h3>
+				<ReactContactForm
+					className='form-start'
+					to='jt.mccutcheon@live.com'
+					titlePlaceholder='subject'
+					contentsPlaceholder='your message'></ReactContactForm>
 			</section>
 		</StyledAbout>
 	);
@@ -83,6 +89,9 @@ const StyledAbout = styled.div`
 		@media screen and (max-width: 1520px) {
 			align-items: center;
 			flex-direction: column;
+			margin: 0;
+			padding: 0;
+			width: 100%;
 		}
 		img {
 			max-width: 22rem;
@@ -115,6 +124,10 @@ const StyledAbout = styled.div`
 			@media screen and (max-width: 550px) {
 				width: 100%;
 			}	
+			@media screen and (max-width: 1000px) {
+				width: 100%;
+				margin: 0;
+			}	
 			input {
 				margin: 2rem;
 				border-style: none;
@@ -128,7 +141,7 @@ const StyledAbout = styled.div`
 				margin: 2rem;
 				border-style: none;
 				padding: .5rem 1rem;
-				border-radius: 14px;
+				border-radius: 15px;
 				&:focus {
 				outline: none;
 			}
@@ -136,7 +149,7 @@ const StyledAbout = styled.div`
 			a {
 				margin: 2rem;
 				border: 1px solid #1c2a35;
-				border-radius: 14px;
+				border-radius: 30px;
 				padding: 1rem 0;
 				color: white;
 				background-color: #5d97c9;
