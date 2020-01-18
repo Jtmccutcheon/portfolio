@@ -110,7 +110,7 @@ const Projects = props => {
 					</button>
 					<button>
 						<a
-							href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'
+							href='https://explorequality.com/interviewq'
 							target='_blank'
 							rel='noopener noreferrer'>
 							View Live Site
@@ -131,7 +131,6 @@ const StyledProjects = styled.div`
 
 	h2 {
 		margin: 0;
-		/* margin-top: 5rem; */
 		padding-top: 5rem;
 	}
 	section {
