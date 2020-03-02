@@ -26,20 +26,21 @@ const StyledHeader = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
-	position: fixed;
-	top: 0;
+	/* position: fixed; */
+	position: absolute;
+	top: 26rem;
 	font-size: 1.2rem;
 	background-color: #1c2a35;
 	text-align: left;
-	border-radius: 0 0 10rem;
+	border-radius: 0 0 1rem;
 	border-width: 50px 0 50px 75px;
 	width: 200px;
 	height: 200px;
 	z-index: 2;
 
 	@media screen and (max-width: 670px) {
-		top: 25rem;
-		border-radius: 13px;
+		top: 37.4rem;
+		border-radius: 0 0 1rem;
 		width: 120px;
 	}
 
