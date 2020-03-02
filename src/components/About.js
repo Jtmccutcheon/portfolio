@@ -1,69 +1,79 @@
-import React from 'react';
-import styled from 'styled-components';
-import ReactContactForm from 'react-mail-form';
+import React from "react";
+import styled from "styled-components";
+import ReactContactForm from "react-mail-form";
 //images
-import justinimg from '../assets/justinimg.JPG';
-import lambda from '../assets/lambda.png';
+import justinimg from "../assets/justinimg.JPG";
+import lambda from "../assets/lambda.png";
+// import maybe from "../assets/maybe.jpg";
 
 const About = props => {
 	return (
 		<StyledAbout>
-			<section className='top-content'>
+			{/* <section className='top-content' style={{}}>
 				<div>
 					<h1>Justin McCutcheon</h1>
 					<h2>Full Stack Web Developer</h2>
 				</div>
 				<img src={justinimg} alt='headshot' />
-			</section>
+			</section> */}
 			<section className='middle-content'>
 				<img src={lambda} alt='lambdalogo' />
 				<div>
 					<h3>
-						Hello, my name is Justin McCutcheon. Welcome to my portfolio
-						website.
+						Hello, my name is Justin McCutcheon. Welcome to my
+						portfolio website.
 					</h3>
 					<p>
-						I am from Toledo, Ohio and finding Lambda school sparked the biggest
-						change in my life for the better. In Toledo the job market is
-						basically restaurants or manufacturing.
+						I am from Toledo, Ohio and finding Lambda school sparked
+						the biggest change in my life for the better. In Toledo
+						the job market is basically restaurants or
+						manufacturing.
 					</p>
 					<p>
-						Lambda School is where I acquired the skills and confidence to work
-						towards a better future. Over their 9 month bootcamp, I spent well
-						over 40 hours a week fully immersed in learning, reading, and
-						developing web applications.
+						Lambda School is where I acquired the skills and
+						confidence to work towards a better future. Over their 9
+						month bootcamp, I spent well over 40 hours a week fully
+						immersed in learning, reading, and developing web
+						applications.
 					</p>
 				</div>
 			</section>
 			<section className='bottom-form'>
 				<h3 className='bottom-title'>
-					Contact me with job offers, questions, comments, feedback, trolls,
-					etc...
+					Contact me with job offers, questions, comments, feedback,
+					trolls, etc...
 				</h3>
 				<ReactContactForm
 					className='form-start'
 					to='jt.mccutcheon@live.com'
 					titlePlaceholder='subject'
-					contentsPlaceholder='your message'></ReactContactForm>
+					contentsPlaceholder='your message'
+				></ReactContactForm>
 			</section>
 		</StyledAbout>
 	);
 };
 
 const StyledAbout = styled.div`
-
-	/* body container */
-	/* height: 100vh; */
-	width: 60%;
 	margin: 0 auto;
+	margin-top: 5rem;
 	display: flex;
-	flex-direction column;
+	flex-direction: column;
 	/* name title banner img */
+
 	.top-content {
-		display: flex;
-		justify-content: space-around;
-		/* margin: 3rem; */
+		/* display: flex;
+		justify-content: flex-end;
 		padding: 3rem;
+		background-image: url("https://images.unsplash.com/photo-1555952494-efd681c7e3f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		z-index: 0;
+		top: 0;
+		width: 100%; */
+
 		@media screen and (max-width: 1520px) {
 			align-items: center;
 			flex-direction: column-reverse;
@@ -77,6 +87,7 @@ const StyledAbout = styled.div`
 			align-self: center;
 			width: 20rem;
 			border-radius: 50%;
+			margin-right: 1rem;
 		}
 	}
 	/* lambda logo and and story */
@@ -86,6 +97,9 @@ const StyledAbout = styled.div`
 		/* margin: 3rem; */
 		padding: 3rem;
 		overflow: visible;
+		width: 60%;
+		margin: 0 auto;
+		position: relative;
 		@media screen and (max-width: 1520px) {
 			align-items: center;
 			flex-direction: column;
@@ -97,25 +111,25 @@ const StyledAbout = styled.div`
 			max-width: 22rem;
 			max-height: 10rem;
 			margin: 3.5rem 7rem;
-			
 		}
 		div {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			text-align: left;
-				@media screen and (max-width: 1520px) {
-					text-align: center;
+
+			margin-right: 2rem;
+			@media screen and (max-width: 1520px) {
+				text-align: center;
 			}
 		}
 	}
 
 	.bottom-form {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			margin: 3rem 0;
-		.form-start{
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		margin: 5rem auto 0 auto;
+		.form-start {
 			width: 50%;
 			display: flex;
 			flex-direction: column;
@@ -123,28 +137,28 @@ const StyledAbout = styled.div`
 			margin: 1rem;
 			@media screen and (max-width: 550px) {
 				width: 100%;
-			}	
+			}
 			@media screen and (max-width: 1000px) {
 				width: 100%;
 				margin: 0;
-			}	
+			}
 			input {
 				margin: 2rem;
 				border-style: none;
-				padding: .5rem 1rem;
+				padding: 0.5rem 1rem;
 				border-radius: 14px;
 				&:focus {
-				outline: none;
+					outline: none;
+				}
 			}
-			}
-			textarea{ 
+			textarea {
 				margin: 2rem;
 				border-style: none;
-				padding: .5rem 1rem;
+				padding: 0.5rem 1rem;
 				border-radius: 15px;
 				&:focus {
-				outline: none;
-			}
+					outline: none;
+				}
 			}
 			a {
 				margin: 2rem;
@@ -154,7 +168,7 @@ const StyledAbout = styled.div`
 				color: white;
 				background-color: #5d97c9;
 				&:hover {
-					background-color: #171E24
+					background-color: #171e24;
 				}
 			}
 		}
