@@ -11,22 +11,27 @@ const Header = props => {
 	// 	opacity: toggle ? 1 : 0,
 	// });
 
-	const transitions = useTransition(toggle, null, {
-		from: { opacity: 0 },
-		enter: { opacity: 1 },
-		leave: { opacity: 0 },
+	const animate = useSpring({
+		marginLeft: toggle ? 0 : -100,
+		// reverse: toggle,
 	});
+
+	// const transitions = useTransition(toggle, null, {
+	// 	from: { opacity: 0 },
+	// 	enter: { opacity: 1 },
+	// 	leave: { opacity: 0 },
+	// });
 
 	return toggle ? (
 		// <div>
-		// <animated.div style={}>
-		<StyledHeader>
-			<NavLink to='/about'>about</NavLink>
-			<NavLink to='/skills'>skills</NavLink>
-			<NavLink to='/projects'>projects</NavLink>
-		</StyledHeader>
-	) : // </animated.div>
-	// </div>
+		<animated.div style={animate}>
+			<StyledHeader>
+				<NavLink to='/about'>about</NavLink>
+				<NavLink to='/skills'>skills</NavLink>
+				<NavLink to='/projects'>projects</NavLink>
+			</StyledHeader>
+		</animated.div>
+	) : // </div>
 	null;
 };
 
