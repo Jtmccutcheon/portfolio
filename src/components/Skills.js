@@ -149,7 +149,7 @@ const StyledSkills = styled.div`
 		border-radius: 14px;
 		&:hover {
 			transition: 1s;
-			transform: scale(1.2);
+			transform: scale(1.1);
 			animation: glowing 2000ms infinite;
 			@keyframes glowing {
 				0% {
