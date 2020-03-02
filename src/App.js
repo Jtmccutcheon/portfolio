@@ -4,7 +4,7 @@ import { Router, Route, Switch, useLocation } from "react-router-dom";
 // libraries
 import { Icon } from "semantic-ui-react";
 import styled from "styled-components";
-import { useTransition, animated, useSpring, config } from "react-spring";
+import { useTransition, animated, config } from "react-spring";
 
 // styles
 import "./App.css";
@@ -22,26 +22,12 @@ function App(props) {
 
 	const location = useLocation();
 	// on app render pushs to the about page because of css active tab styles
-	const [toggle, setToggle] = useState(true);
-
-	// const animate = useSpring({
-	// 	marginLeft: toggle ? 0 : -100,
-	// });
+	const [toggle, setToggle] = useState(false);
 
 	const switchToggle = () => {
 		setToggle(!toggle);
 	};
 
-	// const transitions = useTransition(location, location => location.pathname, {
-	// 	// enter: { marginRight: 200 },
-	// 	// leave: { marginRight: 0 },
-	// 	// from: { opacity: 0, transform: "translate3d(100%,0,0)" },
-	// 	// enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
-	// 	// leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
-	// 	from: { opacity: 0, transform: "translate3d(100%,0,0)" },
-	// 	enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
-	// 	leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
-	// });
 	const transitions = useTransition(location, location => location.pathname, {
 		from: { opacity: 0, transform: "translate3d(100%,0,0)" },
 		enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
@@ -57,17 +43,6 @@ function App(props) {
 		<div className='App'>
 			<div>
 				<Header toggle={toggle}></Header>
-				{/* <animated.div style={animate}>
-					<Header style={animate} toggle={toggle}></Header>
-				</animated.div> */}
-				{/* {transitions.map(
-					({ item, props, key }) =>
-						item && (
-							<animated.div key={key} style={props}>
-								<Header toggle={toggle} />
-							</animated.div>
-						),
-				)} */}
 				<HeaderDiv className='top-content'>
 					{/* <div></div> */}
 					<div>
@@ -90,11 +65,6 @@ function App(props) {
 						</Switch>
 					</animated.div>
 				))}
-				{/* <Switch>
-					<Route path='/about' component={About} />
-					<Route path='/skills' component={Skills} />
-					<Route path='/projects' component={Projects} />
-				</Switch> */}
 			</Router>
 			<Footer {...props} />
 		</div>
@@ -112,7 +82,6 @@ const HeaderDiv = styled.section`
 	z-index: 1;
 	top: 0;
 	width: 100%;
-	/* position: fixed; */
 
 	@media screen and (max-width: 1520px) {
 		align-items: center;
@@ -147,8 +116,6 @@ const ButtonStyle = styled.div`
 	justify-self: center;
 	top: 0;
 	left: 0%;
-	/* position: static; */
-	/* position: absolute; */
 `;
 
 export default App;

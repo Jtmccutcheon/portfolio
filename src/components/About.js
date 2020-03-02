@@ -2,20 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import ReactContactForm from "react-mail-form";
 //images
-import justinimg from "../assets/justinimg.JPG";
-import lambda from "../assets/lambda.png";
-// import maybe from "../assets/maybe.jpg";
 
-const About = props => {
+import lambda from "../assets/lambda.png";
+
+const About = () => {
 	return (
 		<StyledAbout>
-			{/* <section className='top-content' style={{}}>
-				<div>
-					<h1>Justin McCutcheon</h1>
-					<h2>Full Stack Web Developer</h2>
-				</div>
-				<img src={justinimg} alt='headshot' />
-			</section> */}
 			<section className='middle-content'>
 				<img src={lambda} alt='lambdalogo' />
 				<div>
@@ -59,37 +51,7 @@ const StyledAbout = styled.div`
 	margin-top: 5rem;
 	display: flex;
 	flex-direction: column;
-	/* name title banner img */
 
-	.top-content {
-		/* display: flex;
-		justify-content: flex-end;
-		padding: 3rem;
-		background-image: url("https://images.unsplash.com/photo-1555952494-efd681c7e3f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-		z-index: 0;
-		top: 0;
-		width: 100%; */
-
-		@media screen and (max-width: 1520px) {
-			align-items: center;
-			flex-direction: column-reverse;
-		}
-		div {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-		img {
-			align-self: center;
-			width: 20rem;
-			border-radius: 50%;
-			margin-right: 1rem;
-		}
-	}
 	/* lambda logo and and story */
 	.middle-content {
 		display: flex;
@@ -100,6 +62,7 @@ const StyledAbout = styled.div`
 		width: 60%;
 		margin: 0 auto;
 		position: relative;
+		text-align: left;
 		@media screen and (max-width: 1520px) {
 			align-items: center;
 			flex-direction: column;
