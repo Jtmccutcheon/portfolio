@@ -42,6 +42,7 @@ const StyledHeader = styled.div`
 		top: 37.4rem;
 		border-radius: 0 0 1rem;
 		width: 120px;
+		position: fixed;
 	}
 
 	a {
