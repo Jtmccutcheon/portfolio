@@ -69,7 +69,7 @@ const Footer = props => {
 					></Icon>
 				</div>
 
-				<div classname='leftdiv'>
+				<div className='leftdiv'>
 					{nextArrowTitle()}
 					<Icon
 						onClick={arrowRight}
@@ -117,6 +117,7 @@ const Arrow = styled.div`
 	padding: 3rem;
 	/* margin-bottom: 18rem; */
 	position: absolute;
+	/* bottom: 32rem; */
 	bottom: 1rem;
 	z-index: 1;
 	@media screen and (max-width: 500px) {
