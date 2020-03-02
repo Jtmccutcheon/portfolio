@@ -1,9 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import tipseaseLogo from '../assets/tipseaseimg.png';
-import gitstatus from '../assets/gitstatus.png';
-import qualityhub from '../assets/qualityhub.png';
-import interviewq from '../assets/interviewq.png';
+import React from "react";
+import styled from "styled-components";
+import tipseaseLogo from "../assets/tipseaseimg.png";
+import gitstatus from "../assets/gitstatus.png";
+import qualityhub from "../assets/qualityhub.png";
+import interviewq from "../assets/interviewq.png";
+
+// https://www.npmjs.com/package/react-card-flip
 
 const Projects = props => {
 	return (
@@ -15,16 +17,18 @@ const Projects = props => {
 					<div className='card-content'>
 						<img src={tipseaseLogo} alt='Tipsease' />
 						<p>
-							Tipsease is an app to connect customers to their service workers
-							directly and cuts out the place of buisness middleman and ensures
-							that all of the tip goes to your favorite service workers
+							Tipsease is an app to connect customers to their
+							service workers directly and cuts out the place of
+							buisness middleman and ensures that all of the tip
+							goes to your favorite service workers
 						</p>
 					</div>
 					<button>
 						<a
 							href='https://github.com/sep2019-bw-tipsease'
 							target='_blank'
-							rel='noopener noreferrer'>
+							rel='noopener noreferrer'
+						>
 							View on Github
 						</a>
 					</button>
@@ -32,7 +36,8 @@ const Projects = props => {
 						<a
 							href='https://besttipsease-app.netlify.com/'
 							target='_blank'
-							rel='noopener noreferrer'>
+							rel='noopener noreferrer'
+						>
 							View Live Site
 						</a>
 					</button>
@@ -42,16 +47,18 @@ const Projects = props => {
 					<div className='card-content'>
 						<img src={gitstatus} alt='gitstatus' />
 						<p>
-							Git status is an app that uses githubs public api to make profile
-							pages for github users with various info and lets our users
-							favorite and add private notes
+							Git status is an app that uses githubs public api to
+							make profile pages for github users with various
+							info and lets our users favorite and add private
+							notes
 						</p>
 					</div>
 					<button>
 						<a
 							href='https://github.com/Build-GitHub-User-Breakdown'
 							target='_blank'
-							rel='noopener noreferrer'>
+							rel='noopener noreferrer'
+						>
 							View on Github
 						</a>
 					</button>
@@ -59,7 +66,8 @@ const Projects = props => {
 						<a
 							href='https://git-status-app.netlify.com/'
 							target='_blank'
-							rel='noopener noreferrer'>
+							rel='noopener noreferrer'
+						>
 							View Live Site
 						</a>
 					</button>
@@ -69,15 +77,17 @@ const Projects = props => {
 					<div className='card-content'>
 						<img src={qualityhub} alt='QualityHub' />
 						<p>
-							QualityHub is an all in one bundle of quality assesment services
-							with one login for many microservices
+							QualityHub is an all in one bundle of quality
+							assesment services with one login for many
+							microservices
 						</p>
 					</div>
 					<button>
 						<a
 							href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'
 							target='_blank'
-							rel='noopener noreferrer'>
+							rel='noopener noreferrer'
+						>
 							View on Github
 						</a>
 					</button>
@@ -85,7 +95,8 @@ const Projects = props => {
 						<a
 							href='https://explorequality.com/'
 							target='_blank'
-							rel='noopener noreferrer'>
+							rel='noopener noreferrer'
+						>
 							View Live Site
 						</a>
 					</button>
@@ -95,16 +106,18 @@ const Projects = props => {
 					<div className='card-content'>
 						<img src={interviewq} alt='InterviwQ' />
 						<p>
-							InterviewQ is a platform to connect job seekers and intview coachs
-							to set up paid mock interviews with in app video calling as well
-							feedback and rating system
+							InterviewQ is a platform to connect job seekers and
+							intview coachs to set up paid mock interviews with
+							in app video calling as well feedback and rating
+							system
 						</p>
 					</div>
 					<button>
 						<a
 							href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'
 							target='_blank'
-							rel='noopener noreferrer'>
+							rel='noopener noreferrer'
+						>
 							View on Github
 						</a>
 					</button>
@@ -112,7 +125,8 @@ const Projects = props => {
 						<a
 							href='https://explorequality.com/interviewq'
 							target='_blank'
-							rel='noopener noreferrer'>
+							rel='noopener noreferrer'
+						>
 							View Live Site
 						</a>
 					</button>

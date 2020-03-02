@@ -115,26 +115,19 @@ const Arrow = styled.div`
 	justify-content: space-between;
 	height: 5rem;
 	padding: 3rem;
-	/* margin-bottom: 18rem; */
+
 	position: absolute;
-	/* bottom: 32rem; */
+
 	bottom: 1rem;
 	z-index: 1;
 	@media screen and (max-width: 850px) {
 		display: none;
 	}
-	/* .leftdiv {
-		bottom: 2rem;
-	}
-	.rightdiv {
-		bottom: 2rem;
-	} */
 
 	.arrow-right {
-		/* margin: 3rem 6rem 3rem 3rem; */
 		font-size: 3rem;
 		background-color: #1c2a35;
-		/* position: relative; */
+
 		width: 75px;
 		height: 75px;
 		border-radius: 50%;
@@ -147,10 +140,9 @@ const Arrow = styled.div`
 		}
 	}
 	.arrow-left {
-		/* margin: 3rem 3rem 3rem 6rem; */
 		font-size: 3rem;
 		background-color: #1c2a35;
-		/* position: relative; */
+
 		width: 75px;
 		height: 75px;
 		border-radius: 50%;
@@ -165,7 +157,6 @@ const Arrow = styled.div`
 `;
 
 const StyledFooter = styled.div`
-	/* margin-top: 4rem; */
 	display: flex;
 	text-align: center;
 	align-items: center;
@@ -173,7 +164,6 @@ const StyledFooter = styled.div`
 	background-color: #1c2a35;
 	font-size: 2rem;
 	justify-content: center;
-	/* max-height: 5rem; */
 
 	a {
 		text-decoration: none;

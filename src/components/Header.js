@@ -1,29 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { useTransition, animated, useSpring } from "react-spring";
+import { animated, useSpring } from "react-spring";
 
 const Header = props => {
-	// console.log(props);
 	const { toggle } = props;
 	console.log(toggle);
-	// const animate = useSpring({
-	// 	opacity: toggle ? 1 : 0,
-	// });
 
 	const animate = useSpring({
 		marginLeft: toggle ? 0 : -100,
-		// reverse: toggle,
 	});
 
-	// const transitions = useTransition(toggle, null, {
-	// 	from: { opacity: 0 },
-	// 	enter: { opacity: 1 },
-	// 	leave: { opacity: 0 },
-	// });
-
 	return toggle ? (
-		// <div>
 		<animated.div style={animate}>
 			<StyledHeader>
 				<NavLink to='/about'>about</NavLink>
@@ -31,8 +19,7 @@ const Header = props => {
 				<NavLink to='/projects'>projects</NavLink>
 			</StyledHeader>
 		</animated.div>
-	) : // </div>
-	null;
+	) : null;
 };
 
 const StyledHeader = styled.div`
@@ -50,12 +37,18 @@ const StyledHeader = styled.div`
 	height: 200px;
 	z-index: 2;
 
+	@media screen and (max-width: 670px) {
+		top: 25rem;
+		border-radius: 13px;
+		width: 120px;
+	}
+
 	a {
 		margin: 0;
 		text-decoration: none;
 		color: #fff;
 		padding: 0.5rem;
-		/* font-weight: 900; */
+
 		opacity: 0.5;
 		padding-left: 40px;
 		padding-top: 20px;
