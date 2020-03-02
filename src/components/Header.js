@@ -1,34 +1,59 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+import { useTransition, animated, useSpring } from "react-spring";
 
-const Header = () => {
-	return (
-		<div>
-			<StyledHeader>
-				<NavLink to='/about'>about</NavLink>
-				<NavLink to='/skills'>skills</NavLink>
-				<NavLink to='/projects'>projects</NavLink>
-			</StyledHeader>
-		</div>
-	);
+const Header = props => {
+	// console.log(props);
+	const { toggle } = props;
+	console.log(toggle);
+	// const animate = useSpring({
+	// 	opacity: toggle ? 1 : 0,
+	// });
+
+	const transitions = useTransition(toggle, null, {
+		from: { opacity: 0 },
+		enter: { opacity: 1 },
+		leave: { opacity: 0 },
+	});
+
+	return toggle ? (
+		// <div>
+		// <animated.div style={}>
+		<StyledHeader>
+			<NavLink to='/about'>about</NavLink>
+			<NavLink to='/skills'>skills</NavLink>
+			<NavLink to='/projects'>projects</NavLink>
+		</StyledHeader>
+	) : // </animated.div>
+	// </div>
+	null;
 };
 
 const StyledHeader = styled.div`
 	display: flex;
-	justify-content: space-around;
-	font-size: 2rem;
-	padding: 4rem 35% 0 35%;
+	justify-content: flex-start;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	font-size: 1.2rem;
 	background-color: #1c2a35;
-	margin: 0 auto;
+	text-align: left;
+	border-radius: 0 0 10rem;
+	border-width: 50px 0 50px 75px;
+	width: 200px;
+	height: 200px;
+	z-index: 2;
 
-	a {	
-		margin:0;
+	a {
+		margin: 0;
 		text-decoration: none;
 		color: #fff;
-		padding: 1rem;
-		font-weight: 900;
+		padding: 0.5rem;
+		/* font-weight: 900; */
 		opacity: 0.5;
+		padding-left: 40px;
+		padding-top: 20px;
 		&:hover {
 			color: white;
 			opacity: 1;
