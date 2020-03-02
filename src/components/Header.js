@@ -39,7 +39,7 @@ const StyledHeader = styled.div`
 	z-index: 2;
 
 	@media screen and (max-width: 670px) {
-		top: 37.4rem;
+		top: 0;
 		border-radius: 0 0 1rem;
 		width: 120px;
 		position: fixed;
