@@ -120,7 +120,7 @@ const Arrow = styled.div`
 	/* bottom: 32rem; */
 	bottom: 1rem;
 	z-index: 1;
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 850px) {
 		display: none;
 	}
 	/* .leftdiv {
