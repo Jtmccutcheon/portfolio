@@ -1,56 +1,56 @@
-import React from "react";
+import React from 'react';
 
 //libraries
-import { Icon } from "semantic-ui-react";
-import styled from "styled-components";
-import "semantic-ui-css/semantic.min.css";
+import { Icon } from 'semantic-ui-react';
+import styled from 'styled-components';
+import 'semantic-ui-css/semantic.min.css';
 
 const Footer = props => {
 	console.log(props);
 	// onClick handlers
 	const arrowRight = () => {
-		if (props.location.pathname === "/about") {
-			props.history.push("skills");
-		} else if (props.location.pathname === "/skills") {
-			props.history.push("projects");
-		} else if (props.location.pathname === "/projects") {
-			props.history.push("about");
+		if (props.location.pathname === '/about') {
+			props.history.push('skills');
+		} else if (props.location.pathname === '/skills') {
+			props.history.push('projects');
+		} else if (props.location.pathname === '/projects') {
+			props.history.push('about');
 		}
 	};
 	const arrowLeft = () => {
-		if (props.location.pathname === "/about") {
-			props.history.push("projects");
-		} else if (props.location.pathname === "/projects") {
-			props.history.push("skills");
-		} else if (props.location.pathname === "/skills") {
-			props.history.push("about");
+		if (props.location.pathname === '/about') {
+			props.history.push('projects');
+		} else if (props.location.pathname === '/projects') {
+			props.history.push('skills');
+		} else if (props.location.pathname === '/skills') {
+			props.history.push('about');
 		}
 	};
 
 	const nextArrowTitle = () => {
 		let title = props.location.pathname.slice(1);
-		if (title === "about") {
-			let nextTitle = "skills";
+		if (title === 'about') {
+			let nextTitle = 'skills';
 			return <h4>to {nextTitle}</h4>;
-		} else if (title === "skills") {
-			let nextTitle = "projects";
+		} else if (title === 'skills') {
+			let nextTitle = 'projects';
 			return <h4>to {nextTitle}</h4>;
-		} else if (title === "projects") {
-			let nextTitle = "about";
+		} else if (title === 'projects') {
+			let nextTitle = 'about';
 			return <h4>to {nextTitle}</h4>;
 		}
 	};
 
 	const lastArrowTitle = () => {
 		let title = props.location.pathname.slice(1);
-		if (title === "about") {
-			let lastTitle = "projects";
+		if (title === 'about') {
+			let lastTitle = 'projects';
 			return <h4>to {lastTitle}</h4>;
-		} else if (title === "projects") {
-			let lastTitle = "skills";
+		} else if (title === 'projects') {
+			let lastTitle = 'skills';
 			return <h4>to {lastTitle}</h4>;
-		} else if (title === "skills") {
-			let lastTitle = "about";
+		} else if (title === 'skills') {
+			let lastTitle = 'about';
 			return <h4>to {lastTitle}</h4>;
 		}
 	};
@@ -82,7 +82,7 @@ const Footer = props => {
 			{/* footer links */}
 			<StyledFooter>
 				<a
-					href='https://www.linkedin.com/in/justin-mccutcheon-667b5a152/'
+					href='https://www.linkedin.com/in/justinmccutcheon/'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
@@ -127,13 +127,13 @@ const Arrow = styled.div`
 	.arrow-right {
 		font-size: 3rem;
 		background-color: #1c2a35;
-
 		width: 75px;
 		height: 75px;
 		border-radius: 50%;
 		text-align: center;
 		line-height: 30px;
 		padding: 21px;
+
 		&:hover {
 			background-color: #5d97c9;
 			cursor: pointer;
