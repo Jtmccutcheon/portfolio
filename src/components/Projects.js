@@ -11,6 +11,7 @@ const Projects = props => {
 	return (
 		<StyledProjects>
 			<h2>Projects I've contributed to</h2>
+			<p>Heroku free tier please be patient on first load</p>
 			<section>
 				<div className='card'>
 					<h3>Tipsease</h3>
