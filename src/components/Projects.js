@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import tipseaseLogo from "../assets/tipseaseimg.png";
-import gitstatus from "../assets/gitstatus.png";
-import qualityhub from "../assets/qualityhub.png";
-import interviewq from "../assets/interviewq.png";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import tipseaseLogo from '../assets/tipseaseimg.png';
+import gitstatus from '../assets/gitstatus.png';
+import qualityhub from '../assets/qualityhub.png';
+import interviewq from '../assets/interviewq.png';
 
 // https://www.npmjs.com/package/react-card-flip
 
@@ -11,6 +11,7 @@ const Projects = props => {
 	return (
 		<StyledProjects>
 			<h2>Projects I've contributed to</h2>
+			<p>Heroku free tier please be patient on first load</p>
 			<section>
 				<div className='card'>
 					<h3>Tipsease</h3>
@@ -82,7 +83,7 @@ const Projects = props => {
 							microservices
 						</p>
 					</div>
-					<button>
+					<button disabled>
 						<a
 							href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'
 							target='_blank'
@@ -93,7 +94,7 @@ const Projects = props => {
 					</button>
 					<button>
 						<a
-							href='https://explorequality.com/'
+							href='https://qhubfe.herokuapp.com/'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
@@ -112,9 +113,9 @@ const Projects = props => {
 							system
 						</p>
 					</div>
-					<button>
+					<button disabled>
 						<a
-							href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'
+							href='https://github.com/Lambda-School-Labs/quality-hub-core-fe/tree/master/src/InterviewQ'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
@@ -123,7 +124,7 @@ const Projects = props => {
 					</button>
 					<button>
 						<a
-							href='https://explorequality.com/interviewq'
+							href='https://qhubfe.herokuapp.com/interviewq'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
