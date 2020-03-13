@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 //client side routing
-import { Router, Route, Switch, useLocation } from "react-router-dom";
+import { Router, Route, Switch, useLocation } from 'react-router-dom';
 // libraries
-import { Icon } from "semantic-ui-react";
-import styled from "styled-components";
-import { useTransition, animated, config } from "react-spring";
+import { Icon } from 'semantic-ui-react';
+import styled from 'styled-components';
+import { useTransition, animated, config } from 'react-spring';
 
 // styles
-import "./App.css";
+import './App.css';
 
-import justinimg from "./assets/justinimg.JPG";
+import justinimg from './assets/justinimg.JPG';
 //components
-import Header from "./components/Header";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import About from "./components/About";
-import Footer from "./components/Footer";
+import Header from './components/Header';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import About from './components/About';
+import Footer from './components/Footer';
+
+import maybe from './assets/maybe.jpg';
 
 function App(props) {
 	const { history } = props;
@@ -29,14 +31,14 @@ function App(props) {
 	};
 
 	const transitions = useTransition(location, location => location.pathname, {
-		from: { opacity: 0, transform: "translate3d(100%,0,0)" },
-		enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
-		leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
+		from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
+		enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
+		leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
 		config: config.gentle,
 	});
 
 	useEffect(() => {
-		history.push("/about");
+		history.push('/about');
 	}, [history]);
 
 	return (
@@ -75,7 +77,7 @@ const HeaderDiv = styled.section`
 	display: flex;
 	justify-content: flex-end;
 	padding: 3rem;
-	background-image: url("https://images.unsplash.com/photo-1555952494-efd681c7e3f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+	background-image: url(${maybe});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
