@@ -1,7 +1,7 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
-import { animated, useSpring } from "react-spring";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+import { animated, useSpring } from 'react-spring';
 
 const Header = props => {
 	const { toggle } = props;
@@ -28,11 +28,11 @@ const StyledHeader = styled.div`
 	flex-direction: column;
 	/* position: fixed; */
 	position: absolute;
-	top: 26rem;
+	top: 32rem;
 	font-size: 1.2rem;
 	background-color: #1c2a35;
 	text-align: left;
-	border-radius: 0 0 1rem;
+	border-radius: 0 1rem 1rem 0;
 	border-width: 50px 0 50px 75px;
 	width: 200px;
 	height: 200px;

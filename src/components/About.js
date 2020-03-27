@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import ReactContactForm from "react-mail-form";
+import React from 'react';
+import styled from 'styled-components';
+import ReactContactForm from 'react-mail-form';
 //images
 
-import lambda from "../assets/lambda.png";
+import lambda from '../assets/lambda.png';
 
 const About = () => {
 	return (
@@ -56,6 +56,7 @@ const StyledAbout = styled.div`
 	.middle-content {
 		display: flex;
 		justify-content: space-around;
+		flex-direction: row-reverse
 		/* margin: 3rem; */
 		padding: 3rem;
 		overflow: visible;

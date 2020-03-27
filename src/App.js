@@ -106,18 +106,16 @@ const HeaderDiv = styled.section`
 const ButtonStyle = styled.div`
 	font-size: 2rem;
 	background-color: #1c2a35;
-	margin: 4rem auto 0 auto;
-	width: 75px;
-	height: 75px;
+	/* margin: 4rem auto 0 auto; */
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 30px;
-	padding: 21px;
+	line-height: 19px;
+	padding: 9px;
 	z-index: 2;
 	cursor: pointer;
 	justify-self: center;
-	top: 0;
-	left: 0%;
 `;
 
 export default App;

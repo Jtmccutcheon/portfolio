@@ -120,7 +120,7 @@ const Arrow = styled.div`
 
 	bottom: 1rem;
 	z-index: 1;
-	@media screen and (max-width: 850px) {
+	@media screen and (max-width: 1520px) {
 		display: none;
 	}
 
@@ -162,7 +162,7 @@ const StyledFooter = styled.div`
 	align-items: center;
 	padding: 2rem 35% 1rem 35%;
 	background-color: #1c2a35;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	justify-content: center;
 
 	a {
