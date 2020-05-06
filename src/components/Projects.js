@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import tipseaseLogo from '../assets/tipseaseimg.png';
 import gitstatus from '../assets/gitstatus.png';
@@ -7,7 +7,7 @@ import interviewq from '../assets/interviewq.png';
 
 // https://www.npmjs.com/package/react-card-flip
 
-const Projects = props => {
+const Projects = (props) => {
 	return (
 		<StyledProjects>
 			<h2>Projects I've contributed to</h2>

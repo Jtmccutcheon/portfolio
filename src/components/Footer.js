@@ -5,7 +5,7 @@ import { Icon } from 'semantic-ui-react';
 import styled from 'styled-components';
 import 'semantic-ui-css/semantic.min.css';
 
-const Footer = props => {
+const Footer = (props) => {
 	console.log(props);
 	// onClick handlers
 	const arrowRight = () => {
@@ -120,8 +120,14 @@ const Arrow = styled.div`
 
 	bottom: 1rem;
 	z-index: 1;
-	@media screen and (max-width: 850px) {
-		display: none;
+	@media screen and (max-width: 1520px) {
+		position: relative;
+		bottom: 10rem;
+	}
+
+	@media screen and (max-width: 400px) {
+		position: relative;
+		bottom: 5rem;
 	}
 
 	.arrow-right {
@@ -162,7 +168,7 @@ const StyledFooter = styled.div`
 	align-items: center;
 	padding: 2rem 35% 1rem 35%;
 	background-color: #1c2a35;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	justify-content: center;
 
 	a {

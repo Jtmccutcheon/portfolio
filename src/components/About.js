@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import ReactContactForm from "react-mail-form";
+import React from 'react';
+import styled from 'styled-components';
+import ReactContactForm from 'react-mail-form';
 //images
 
-import lambda from "../assets/lambda.png";
+import lambda from '../assets/lambda.png';
 
 const About = () => {
 	return (
@@ -12,8 +12,8 @@ const About = () => {
 				<img src={lambda} alt='lambdalogo' />
 				<div>
 					<h3>
-						Hello, my name is Justin McCutcheon. Welcome to my
-						portfolio website.
+						Hello, welcome to my portfolio website, I am Justin
+						McCutcheon.
 					</h3>
 					<p>
 						I am from Toledo, Ohio and finding Lambda school sparked
@@ -27,6 +27,11 @@ const About = () => {
 						month bootcamp, I spent well over 40 hours a week fully
 						immersed in learning, reading, and developing web
 						applications.
+					</p>
+					<p>
+						When I'm not working on improving my skills you can
+						catch me playing video games, hanging out with my dogs,
+						and having a good fun time
 					</p>
 				</div>
 			</section>
@@ -56,7 +61,7 @@ const StyledAbout = styled.div`
 	.middle-content {
 		display: flex;
 		justify-content: space-around;
-		/* margin: 3rem; */
+		flex-direction: row-reverse;
 		padding: 3rem;
 		overflow: visible;
 		width: 60%;
@@ -109,7 +114,7 @@ const StyledAbout = styled.div`
 				margin: 2rem;
 				border-style: none;
 				padding: 0.5rem 1rem;
-				border-radius: 14px;
+				border-radius: 10px;
 				&:focus {
 					outline: none;
 				}
@@ -118,7 +123,7 @@ const StyledAbout = styled.div`
 				margin: 2rem;
 				border-style: none;
 				padding: 0.5rem 1rem;
-				border-radius: 15px;
+				border-radius: 10px;
 				&:focus {
 					outline: none;
 				}
@@ -130,6 +135,8 @@ const StyledAbout = styled.div`
 				padding: 1rem 0;
 				color: white;
 				background-color: #5d97c9;
+				width: 10rem;
+				align-self: center;
 				&:hover {
 					background-color: #171e24;
 				}
