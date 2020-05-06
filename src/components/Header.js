@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { animated, useSpring } from 'react-spring';
 
 const Header = props => {
-	const { toggle } = props;
-	console.log(toggle);
+	// const { toggle } = props;
+	// console.log(toggle);
+
+	// useEffect(() => {
+	// 	// (effect)
+	// 	const [toggle, setToggle] = useState(false);
+
+	// 	const switchToggle = () => {
+	// 		setToggle(!toggle);
+	// 	};
+	// 	return () => {
+	// 		// cleanup
+	// 	};
+	// }, []);
+
+	const [toggle, setToggle] = useState(false);
+
+	const switchToggle = () => {
+		setToggle(!toggle);
+	};
 
 	const animate = useSpring({
 		marginLeft: toggle ? 0 : -100,
