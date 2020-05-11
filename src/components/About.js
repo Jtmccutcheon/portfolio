@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import ReactContactForm from 'react-mail-form';
 //images
-
+import dogaroos from '../assets/dogaroos.jpg';
 import lambda from '../assets/lambda.png';
 
 const About = () => {
 	return (
 		<StyledAbout>
 			<section className='middle-content'>
-				<img src={lambda} alt='lambdalogo' />
+				<img src={dogaroos} alt='dogaroos' />
 				<div>
 					<h3>
 						Hello, welcome to my portfolio website, I am Justin
@@ -31,7 +31,7 @@ const About = () => {
 					<p>
 						When I'm not working on improving my skills you can
 						catch me playing video games, hanging out with my dogs,
-						and having a good fun time
+						and having a good fun time.
 					</p>
 				</div>
 			</section>
@@ -61,7 +61,7 @@ const StyledAbout = styled.div`
 	.middle-content {
 		display: flex;
 		justify-content: space-around;
-		flex-direction: row-reverse;
+		flex-direction: row;
 		padding: 3rem;
 		overflow: visible;
 		width: 60%;
@@ -76,8 +76,9 @@ const StyledAbout = styled.div`
 			width: 100%;
 		}
 		img {
-			max-width: 22rem;
-			max-height: 10rem;
+			max-width: 26rem;
+			/* max-height: 10rem; */
+			border-radius: 14px;
 			margin: 3.5rem 7rem;
 		}
 		div {
