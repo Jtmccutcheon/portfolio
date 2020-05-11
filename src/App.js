@@ -35,7 +35,7 @@ function App(props) {
 	);
 
 	useEffect(() => {
-		history.push('/about');
+		history.push('/projects');
 	}, [history]);
 
 	return (
