@@ -10,7 +10,6 @@ import './App.css';
 
 import justinimg from './assets/justinimg.JPG';
 //components
-import Header from './components/Header';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import About from './components/About';
@@ -35,13 +34,12 @@ function App(props) {
 	);
 
 	useEffect(() => {
-		history.push('/projects');
+		history.push('/about');
 	}, [history]);
 
 	return (
 		<div className='App'>
 			<div>
-				<Header></Header>
 				<HeaderDiv className='top-content'>
 					<div>
 						<h1>Justin McCutcheon</h1>

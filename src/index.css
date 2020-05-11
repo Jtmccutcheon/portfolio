@@ -6,6 +6,7 @@ body {
 /* width */
 ::-webkit-scrollbar {
 	opacity: 0.5;
+	width: 0.5em;
 }
 
 /* Track */
@@ -19,7 +20,7 @@ body {
 ::-webkit-scrollbar-thumb {
 	background: #1c2a35;
 	border-radius: 10px;
-	/* border-style: outset; */
+	border-style: outset;
 	border-width: 0.5px;
 	border: black;
 }
