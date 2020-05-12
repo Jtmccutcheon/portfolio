@@ -87,9 +87,9 @@ const Projects = (props) => {
 										sheet in 4 days
 										<br></br>
 										Built frontend using React and handled
-										styling with Reactstrap Overall had fun
-										working on this project as a former wait
-										staff
+										styling with Reactstrap <br />
+										Overall had fun working on this project
+										as a former wait staff
 										<br></br>
 										With more time I would implement payment
 										processing
