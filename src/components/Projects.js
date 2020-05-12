@@ -19,6 +19,7 @@ import reactImg from '../assets/reactimg.png';
 import sass from '../assets/sass.png';
 import apollo from '../assets/apolloimg.png';
 import graphql from '../assets/graphql.png';
+import rest from '../assets/resticon.png';
 
 const Projects = (props) => {
 	const [isFlipped, setIsFlipped] = useState(false);
@@ -85,8 +86,9 @@ const Projects = (props) => {
 										Delivered minimal viable product to spec
 										sheet in 4 days
 										<br></br>
-										Overall had fun working on this project
-										hits close to home as a former wait
+										Built frontend using React and handled
+										styling with Reactstrap Overall had fun
+										working on this project as a former wait
 										staff
 										<br></br>
 										With more time I would implement payment
@@ -149,6 +151,7 @@ const Projects = (props) => {
 									<img src={jsImg} alt='js img' />
 									<img src={node} alt='node img' />
 									<img src={reactImg} alt='react img' />
+									<img src={rest} alt='react img' />
 								</div>
 								<div className='power-statements'>
 									<p>
@@ -157,7 +160,10 @@ const Projects = (props) => {
 										Delivered minimal viable product to spec
 										sheet in 4 days
 										<br></br>
-										Designed database scehema
+										Designed database scehema using knex,
+										and sql
+										<br />
+										Created Rest api using node and express
 									</p>
 								</div>
 								<Icon

@@ -106,7 +106,7 @@ const Skills = (props) => {
 		},
 	];
 
-	// inline style line 105
+	// inline style line 128
 	const imgSize = {
 		width: '64px',
 	};

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import ReactContactForm from 'react-mail-form';
 //images
 import dogaroos from '../assets/dogaroos.jpg';
-import lambda from '../assets/lambda.png';
 
 const About = () => {
 	return (
