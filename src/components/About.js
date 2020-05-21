@@ -53,6 +53,9 @@ const StyledAbout = styled.div`
 	margin-top: 5rem;
 	display: flex;
 	flex-direction: column;
+	h2 {
+		margin-bottom: 4.5rem;
+	}
 
 	/* lambda logo and and story */
 	.middle-content {
@@ -61,7 +64,7 @@ const StyledAbout = styled.div`
 		flex-direction: row;
 		padding: 3rem;
 		overflow: visible;
-		width: 75%;
+		width: 60%;
 		margin: 0 auto;
 		position: relative;
 		text-align: left;
