@@ -4,6 +4,7 @@ import { Router, Route, Switch, useLocation } from 'react-router-dom';
 // libraries
 import styled from 'styled-components';
 import { useTransition, animated, config } from 'react-spring';
+import { Helmet } from 'react-helmet'; // changes head tag to improve seo
 
 // styles
 import './App.css';
@@ -39,6 +40,13 @@ function App(props) {
 
 	return (
 		<div className='App'>
+			<Helmet>
+				<title>Justin McCutcheon Portfolio</title>
+				<meta
+					name='justin mccutcheon portfolio'
+					content='portfolio of software developer justin mccutcheon'
+				/>
+			</Helmet>
 			<div>
 				<HeaderDiv className='top-content'>
 					<div>
