@@ -34,10 +34,6 @@ function App(props) {
 		},
 	);
 
-	// useEffect(() => {
-	// 	history.push('/about');
-	// }, [history]);
-
 	return (
 		<div className='App'>
 			<Helmet>
