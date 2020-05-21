@@ -7,13 +7,11 @@ import dogaroos from '../assets/dogaroos.jpg';
 const About = () => {
 	return (
 		<StyledAbout>
+			<h2>Welcome to my Portfolio</h2>
 			<section className='middle-content'>
 				<img src={dogaroos} alt='dogaroos' />
 				<div>
-					<h3>
-						Hello, welcome to my portfolio website, I am Justin
-						McCutcheon.
-					</h3>
+					<h3>a little about me...</h3>
 					<p>
 						I am from Toledo, Ohio and finding Lambda school sparked
 						the biggest change in my life for the better. In Toledo
@@ -59,14 +57,17 @@ const StyledAbout = styled.div`
 	/* lambda logo and and story */
 	.middle-content {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		flex-direction: row;
 		padding: 3rem;
 		overflow: visible;
-		width: 60%;
+		width: 75%;
 		margin: 0 auto;
 		position: relative;
 		text-align: left;
+		background-color: #1c2a35;
+		border-radius: 14px;
+
 		@media screen and (max-width: 1520px) {
 			align-items: center;
 			flex-direction: column;
@@ -84,8 +85,13 @@ const StyledAbout = styled.div`
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-
-			margin-right: 2rem;
+			/* margin-right: 2rem; */
+			border: 1px solid #1c2a35;
+			border-radius: 14px;
+			height: 20rem;
+			padding: 1rem;
+			align-self: center;
+			max-width: 28rem;
 			@media screen and (max-width: 1520px) {
 				text-align: center;
 			}

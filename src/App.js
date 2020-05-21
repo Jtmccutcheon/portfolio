@@ -34,9 +34,9 @@ function App(props) {
 		},
 	);
 
-	useEffect(() => {
-		history.push('/about');
-	}, [history]);
+	// useEffect(() => {
+	// 	history.push('/about');
+	// }, [history]);
 
 	return (
 		<div className='App'>
@@ -56,11 +56,12 @@ function App(props) {
 					<img src={justinimg} alt='headshot' />
 				</HeaderDiv>
 			</div>
+			{location.pathname === '/' ? <About /> : null}
 			<Router {...props}>
 				{transitions.map(({ item: location, props, key }) => (
 					<animated.div key={key} style={props}>
 						<Switch>
-							<Route path='/about' component={About} />
+							{/* <Route path='/about' component={About} /> */}
 							<Route path='/skills' component={Skills} />
 							<Route path='/projects' component={Projects} />
 						</Switch>

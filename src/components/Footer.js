@@ -9,47 +9,47 @@ const Footer = (props) => {
 	console.log(props);
 	// onClick handlers
 	const arrowRight = () => {
-		if (props.location.pathname === '/about') {
+		if (props.location.pathname === '/') {
 			props.history.push('skills');
 		} else if (props.location.pathname === '/skills') {
 			props.history.push('projects');
 		} else if (props.location.pathname === '/projects') {
-			props.history.push('about');
+			props.history.push('/');
 		}
 	};
 	const arrowLeft = () => {
-		if (props.location.pathname === '/about') {
+		if (props.location.pathname === '/') {
 			props.history.push('projects');
 		} else if (props.location.pathname === '/projects') {
 			props.history.push('skills');
 		} else if (props.location.pathname === '/skills') {
-			props.history.push('about');
+			props.history.push('/');
 		}
 	};
 
 	const nextArrowTitle = () => {
-		let title = props.location.pathname.slice(1);
-		if (title === 'about') {
+		let title = props.location.pathname;
+		if (title === '/') {
 			let nextTitle = 'skills';
 			return <h4>to {nextTitle}</h4>;
-		} else if (title === 'skills') {
+		} else if (title === '/skills') {
 			let nextTitle = 'projects';
 			return <h4>to {nextTitle}</h4>;
-		} else if (title === 'projects') {
+		} else if (title === '/projects') {
 			let nextTitle = 'about';
 			return <h4>to {nextTitle}</h4>;
 		}
 	};
 
 	const lastArrowTitle = () => {
-		let title = props.location.pathname.slice(1);
-		if (title === 'about') {
+		let title = props.location.pathname;
+		if (title === '/') {
 			let lastTitle = 'projects';
 			return <h4>to {lastTitle}</h4>;
-		} else if (title === 'projects') {
+		} else if (title === '/projects') {
 			let lastTitle = 'skills';
 			return <h4>to {lastTitle}</h4>;
-		} else if (title === 'skills') {
+		} else if (title === '/skills') {
 			let lastTitle = 'about';
 			return <h4>to {lastTitle}</h4>;
 		}
