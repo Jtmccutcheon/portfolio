@@ -62,7 +62,7 @@ const StyledAbout = styled.div`
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
-		padding: 3rem;
+		padding: 0.1rem 0.15rem;
 		overflow: visible;
 		width: 60%;
 		margin: 0 auto;
@@ -82,7 +82,7 @@ const StyledAbout = styled.div`
 			max-width: 26rem;
 			/* max-height: 10rem; */
 			border-radius: 14px;
-			margin: 3.5rem 7rem;
+			margin: 2rem 1.5rem;
 		}
 		div {
 			display: flex;
