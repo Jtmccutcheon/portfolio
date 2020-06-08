@@ -104,24 +104,20 @@ const Projects = (props) => {
 						</div>
 					</ReactCardFlip>
 					<div>
-						<button>
-							<a
-								href='https://github.com/sep2019-bw-tipsease'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								View on Github
-							</a>
-						</button>
-						<button>
-							<a
-								href='https://besttipsease-app.netlify.com/'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								View Live Site
-							</a>
-						</button>
+						<a
+							href='https://github.com/sep2019-bw-tipsease'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<button>View on Github</button>
+						</a>
+						<a
+							href='https://besttipsease-app.netlify.com/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<button>View Live Site</button>
+						</a>
 					</div>
 				</div>
 
@@ -174,24 +170,20 @@ const Projects = (props) => {
 							</div>
 						</div>
 					</ReactCardFlip>
-					<button>
-						<a
-							href='https://github.com/Build-GitHub-User-Breakdown'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							View on Github
-						</a>
-					</button>
-					<button>
-						<a
-							href='https://git-status-app.netlify.com/'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							View Live Site
-						</a>
-					</button>
+					<a
+						href='https://github.com/Build-GitHub-User-Breakdown'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<button>View on Github</button>
+					</a>
+					<a
+						href='https://git-status-app.netlify.com/'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<button>View Live Site</button>
+					</a>
 				</div>
 				<div className='card'>
 					<h3>QualityHub</h3>
@@ -242,24 +234,20 @@ const Projects = (props) => {
 							/>
 						</div>
 					</ReactCardFlip>
-					<button disabled>
-						<a
-							href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							View on Github
-						</a>
-					</button>
-					<button>
-						<a
-							href='https://qhubfe.herokuapp.com/'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							View Live Site
-						</a>
-					</button>
+					<a
+						href='https://github.com/orgs/Lambda-School-Labs/teams/labs-18-quality-hub/repositories'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<button>View on Github</button>
+					</a>
+					<a
+						href='https://qhubfe.herokuapp.com/'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<button>View Live Site</button>
+					</a>
 				</div>
 				<div className='card'>
 					<h3>InterviewQ</h3>
@@ -310,24 +298,20 @@ const Projects = (props) => {
 							</div>
 						</div>
 					</ReactCardFlip>
-					<button disabled>
-						<a
-							href='https://github.com/Lambda-School-Labs/quality-hub-core-fe/tree/master/src/InterviewQ'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							View on Github
-						</a>
-					</button>
-					<button>
-						<a
-							href='https://qhubfe.herokuapp.com/interviewq'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							View Live Site
-						</a>
-					</button>
+					<a
+						href='https://github.com/Lambda-School-Labs/quality-hub-core-fe/tree/master/src/InterviewQ'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<button>View on Github</button>
+					</a>
+					<a
+						href='https://qhubfe.herokuapp.com/interviewq'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<button>View Live Site</button>
+					</a>
 				</div>
 			</section>
 		</StyledProjects>
@@ -437,6 +421,7 @@ const StyledProjects = styled.div`
 			border: 2px solid white;
 			transition-duration: 0.5s;
 			&:hover {
+				color: grey;
 				border-color: #1f1f1f;
 				background-color: white;
 				transition-duration: 0.5s;
