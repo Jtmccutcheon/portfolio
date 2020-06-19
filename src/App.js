@@ -80,7 +80,7 @@ const HeaderDiv = styled.section`
 	z-index: 1;
 	top: 0;
 	width: 100%;
-	border-radius: 0 0 14px 14px;
+	/* border-radius: 0 0 14px 14px; */
 
 	@media screen and (max-width: 1520px) {
 		align-items: center;

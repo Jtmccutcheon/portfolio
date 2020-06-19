@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ReactContactForm from 'react-mail-form';
 //images
-import dogaroos from '../assets/dogaroos.jpg';
+import dogaroos from '../assets/dogaroos.webp';
 
 const About = () => {
 	return (
@@ -64,7 +64,7 @@ const StyledAbout = styled.div`
 		flex-direction: row;
 		padding: 0.1rem 0.15rem;
 		overflow: visible;
-		width: 60%;
+		width: 60rem;
 		margin: 0 auto;
 		position: relative;
 		text-align: left;

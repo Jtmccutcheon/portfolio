@@ -168,6 +168,9 @@ const StyledSkills = styled.div`
 		margin: 1rem;
 		padding: 1rem;
 		border-radius: 14px;
+		img {
+			align-items: center;
+		}
 		&:hover {
 			transition: 1s;
 			transform: scale(1.1);
