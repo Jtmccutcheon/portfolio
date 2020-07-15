@@ -115,19 +115,37 @@ const Arrow = styled.div`
 	justify-content: space-between;
 	height: 5rem;
 	padding: 3rem;
-
 	position: absolute;
-
 	bottom: 1rem;
 	z-index: 1;
+	.rightdiv {
+		@media screen and (max-width: 676px) {
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+			i {
+				margin: 0 1rem 0 0;
+			}
+		}
+	}
+	.leftdiv {
+		@media screen and (max-width: 676px) {
+			display: flex;
+			align-items: center;
+
+			i {
+				margin: 0 0 0 1rem;
+			}
+		}
+	}
+
 	@media screen and (max-width: 1520px) {
 		position: relative;
 		bottom: 10rem;
 	}
-
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 685px) {
 		position: relative;
-		bottom: 5rem;
+		bottom: 1rem;
 	}
 
 	.arrow-right {
