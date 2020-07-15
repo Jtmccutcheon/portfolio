@@ -67,7 +67,7 @@ const Projects = (props) => {
 					<h3>Allegedly TCG</h3>
 					<ReactCardFlip isFlipped={poke}>
 						<div className='card-content'>
-							<img src={pokeImg} alt='fireemblem' />
+							<img src={pokeImg} alt='alleged' />
 							<p>
 								Allegedly TCG is a trading card game based on
 								the pokemon <br></br>trading card game
@@ -206,7 +206,6 @@ const Projects = (props) => {
 						</div>
 						<div className='card-content'>
 							<div className='back'>
-								{' '}
 								<p>Built using</p>
 								<div className='skills-imgages'>
 									<img src={html} alt='html img' />
@@ -484,6 +483,7 @@ const StyledProjects = styled.div`
 		background-color: #1c2a35;
 		box-shadow: 5px 5px 8px #171e24;
 		transition-duration: 0.09s;
+
 		.card-content {
 			height: 300px;
 			.back {
@@ -500,6 +500,9 @@ const StyledProjects = styled.div`
 				}
 				.sharebutton {
 					top: 9rem;
+				}
+				@media screen and (max-width: 419px) {
+					top: 1rem;
 				}
 			}
 			.skills-imgages {
@@ -523,6 +526,43 @@ const StyledProjects = styled.div`
 			text-align: center;
 			line-height: 10px;
 			padding: 20px;
+			@media screen and (max-width: 1352px) {
+				left: 30.25rem;
+			}
+			@media screen and (max-width: 599px) {
+				left: 30.1rem;
+			}
+			@media screen and (max-width: 568px) {
+				left: 28.5rem;
+			}
+			@media screen and (max-width: 526px) {
+				left: 26.5rem;
+			}
+			@media screen and (max-width: 500px) {
+				left: 25.5rem;
+			}
+			@media screen and (max-width: 470px) {
+				left: 23.5rem;
+			}
+			@media screen and (max-width: 445px) {
+				left: 22.25rem;
+			}
+			@media screen and (max-width: 419px) {
+				left: 1rem;
+				top: 1rem;
+			}
+			/* @media screen and (max-width: 387px) {
+				left: 20rem;
+				top: 1rem;
+			}
+			@media screen and (max-width: 358px) {
+				left: 18rem;
+				top: 1rem;
+			}
+			@media screen and (max-width: 325px) {
+				left: 15rem;
+				top: 1rem;
+			} */
 			&:hover {
 				cursor: pointer;
 			}
