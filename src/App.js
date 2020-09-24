@@ -49,7 +49,7 @@ function App(props) {
 						<h1>Justin McCutcheon</h1>
 						<h2>Full Stack Web Developer</h2>
 					</div>
-					<img src={justinimg} alt='headshot' />
+					<img src={justinimg} alt='me' />
 				</HeaderDiv>
 			</div>
 			{location.pathname === '/' ? <About /> : null}
