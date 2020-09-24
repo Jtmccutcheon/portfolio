@@ -551,18 +551,6 @@ const StyledProjects = styled.div`
 				left: 1rem;
 				top: 1rem;
 			}
-			/* @media screen and (max-width: 387px) {
-				left: 20rem;
-				top: 1rem;
-			}
-			@media screen and (max-width: 358px) {
-				left: 18rem;
-				top: 1rem;
-			}
-			@media screen and (max-width: 325px) {
-				left: 15rem;
-				top: 1rem;
-			} */
 			&:hover {
 				cursor: pointer;
 			}
