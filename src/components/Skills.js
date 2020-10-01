@@ -106,38 +106,30 @@ const Skills = (props) => {
 		},
 	];
 
-	// inline style line 128
+	// inline style line 126
 	const imgSize = {
 		width: '64px',
-	};
-
-	// returning the header as a function to keep it above  the skill cards
-	const skillHeader = () => {
-		return (
-			<div className='skill-header'>
-				<h2>Proficient in these technologies</h2>
-			</div>
-		);
-	};
-
-	// function to map out the skill card object
-	const skillFunc = () => {
-		return skillCards.map((card) => {
-			return (
-				<div className='cards'>
-					<img src={card.img} alt='technologies' style={imgSize} />
-					<h4>{card.title}</h4>
-					<p>{card.description}</p>
-				</div>
-			);
-		});
 	};
 
 	// jsx that calls the above functions
 	return (
 		<StyledSkills>
-			{skillHeader()}
-			{skillFunc()}
+			<div className='skill-header'>
+				<h2>Proficient in these technologies</h2>
+			</div>
+			{skillCards.map((card) => {
+				return (
+					<div className='cards'>
+						<img
+							src={card.img}
+							alt='technologies'
+							style={imgSize}
+						/>
+						<h4>{card.title}</h4>
+						<p>{card.description}</p>
+					</div>
+				);
+			})}
 		</StyledSkills>
 	);
 };
