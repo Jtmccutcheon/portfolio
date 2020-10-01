@@ -9,27 +9,27 @@ const Footer = (props) => {
 	console.log(props);
 	// onClick handlers
 	const arrowRight = () => {
-		if (props.location.pathname === '/') {
+		if (props.location.pathname === '/about') {
 			props.history.push('skills');
 		} else if (props.location.pathname === '/skills') {
 			props.history.push('projects');
 		} else if (props.location.pathname === '/projects') {
-			props.history.push('/');
+			props.history.push('/about');
 		}
 	};
 	const arrowLeft = () => {
-		if (props.location.pathname === '/') {
+		if (props.location.pathname === '/about') {
 			props.history.push('projects');
 		} else if (props.location.pathname === '/projects') {
 			props.history.push('skills');
 		} else if (props.location.pathname === '/skills') {
-			props.history.push('/');
+			props.history.push('/about');
 		}
 	};
 
 	const nextArrowTitle = () => {
 		let title = props.location.pathname;
-		if (title === '/') {
+		if (title === '/about') {
 			let nextTitle = 'skills';
 			return <h4>to {nextTitle}</h4>;
 		} else if (title === '/skills') {
@@ -43,7 +43,7 @@ const Footer = (props) => {
 
 	const lastArrowTitle = () => {
 		let title = props.location.pathname;
-		if (title === '/') {
+		if (title === '/about') {
 			let lastTitle = 'projects';
 			return <h4>to {lastTitle}</h4>;
 		} else if (title === '/projects') {

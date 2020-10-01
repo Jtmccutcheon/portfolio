@@ -19,8 +19,6 @@ import Footer from './components/Footer';
 import headerimg from './assets/maybe.jpg';
 
 function App(props) {
-	const { history } = props;
-
 	const location = useLocation();
 
 	const transitions = useTransition(
@@ -33,6 +31,11 @@ function App(props) {
 			config: config.gentle,
 		},
 	);
+	console.log(location);
+	useEffect(() => {
+		props.history.push('/about');
+		return () => {};
+	}, [props.history]);
 
 	return (
 		<div className='App'>
@@ -52,12 +55,12 @@ function App(props) {
 					<img src={justinimg} alt='me' />
 				</HeaderDiv>
 			</div>
-			{location.pathname === '/' ? <About /> : null}
+			{/* {location.pathname === '/' ? <About /> : null} */}
 			<Router {...props}>
 				{transitions.map(({ item: location, props, key }) => (
 					<animated.div key={key} style={props}>
 						<Switch>
-							{/* <Route path='/about' component={About} /> */}
+							<Route path='/about' component={About} />
 							<Route path='/skills' component={Skills} />
 							<Route path='/projects' component={Projects} />
 						</Switch>

@@ -124,7 +124,7 @@ const Projects = (props) => {
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<button>View Live Site</button>
+						<button disabled={false}>View Live Site</button>
 					</a>
 				</div>
 				<div className='card'>
