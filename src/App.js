@@ -41,10 +41,12 @@ function App(props) {
 		<div className='App'>
 			<Helmet>
 				<title>Justin McCutcheon Portfolio</title>
+				<meta charSet='utf-8' />
 				<meta
 					name='justin mccutcheon portfolio'
 					content='portfolio of software developer justin mccutcheon'
 				/>
+				<link rel='canonical' href='https://justinweb.dev/' />
 			</Helmet>
 			<div>
 				<HeaderDiv className='top-content'>
