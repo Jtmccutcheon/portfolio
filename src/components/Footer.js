@@ -2,11 +2,11 @@ import React from 'react';
 
 //libraries
 import { Icon } from 'semantic-ui-react';
-import styled from 'styled-components';
+import FooterStyles from '../styles/FooterStyles'
+import ArrowStyles from '../styles/ArrowStyles'
 import 'semantic-ui-css/semantic.min.css';
 
 const Footer = (props) => {
-	console.log(props);
 	// onClick handlers
 	const arrowRight = () => {
 		if (props.location.pathname === '/about') {
@@ -59,7 +59,7 @@ const Footer = (props) => {
 	return (
 		<>
 			{/* left and right arrows */}
-			<Arrow className='arrow'>
+			<ArrowStyles className='arrow'>
 				<div className='rightdiv'>
 					{lastArrowTitle()}
 					<Icon
@@ -77,10 +77,10 @@ const Footer = (props) => {
 						name='arrow right'
 					></Icon>
 				</div>
-			</Arrow>
+			</ArrowStyles>
 
 			{/* footer links */}
-			<StyledFooter>
+			<FooterStyles>
 				<a
 					href='https://www.linkedin.com/in/justinmccutcheon/'
 					target='_blank'
@@ -102,100 +102,10 @@ const Footer = (props) => {
 				>
 					<Icon name='twitter' />
 				</a>
-			</StyledFooter>
+			</FooterStyles>
 		</>
 	);
 };
 
-// css starts here vvvv
-
-const Arrow = styled.div`
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	height: 5rem;
-	padding: 3rem;
-	position: absolute;
-	bottom: 1rem;
-	z-index: 1;
-	.rightdiv {
-		@media screen and (max-width: 676px) {
-			display: flex;
-			align-items: center;
-			flex-direction: row-reverse;
-			i {
-				margin: 0 1rem 0 0;
-			}
-		}
-	}
-	.leftdiv {
-		@media screen and (max-width: 676px) {
-			display: flex;
-			align-items: center;
-
-			i {
-				margin: 0 0 0 1rem;
-			}
-		}
-	}
-
-	@media screen and (max-width: 1520px) {
-		position: relative;
-		bottom: 10rem;
-	}
-	@media screen and (max-width: 685px) {
-		position: relative;
-		bottom: 1rem;
-	}
-
-	.arrow-right {
-		font-size: 3rem;
-		background-color: #1c2a35;
-		width: 75px;
-		height: 75px;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 30px;
-		padding: 21px;
-
-		&:hover {
-			background-color: #5d97c9;
-			cursor: pointer;
-		}
-	}
-	.arrow-left {
-		font-size: 3rem;
-		background-color: #1c2a35;
-
-		width: 75px;
-		height: 75px;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 30px;
-		padding: 21px;
-		&:hover {
-			background-color: #5d97c9;
-			cursor: pointer;
-		}
-	}
-`;
-
-const StyledFooter = styled.div`
-	display: flex;
-	text-align: center;
-	align-items: center;
-	padding: 2rem 35% 1rem 35%;
-	background-color: #1c2a35;
-	font-size: 1.5rem;
-	justify-content: center;
-
-	a {
-		text-decoration: none;
-		color: #fff;
-		font-weight: 900;
-		opacity: 0.5;
-		margin: 0;
-	}
-`;
 
 export default Footer;
