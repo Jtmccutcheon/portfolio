@@ -1,24 +1,26 @@
 import React, { useEffect } from 'react';
 //client side routing
 import { Router, Route, Switch, useLocation } from 'react-router-dom';
+
 // libraries
-import styled from 'styled-components';
 import { useTransition, animated, config } from 'react-spring';
 import { Helmet } from 'react-helmet'; // changes head tag to improve seo
 
 // styles
 import './App.css';
+import HeaderStyles from './styles/HeaderStyles'
 
-import justinimg from './assets/justinimg.JPG';
+// images 
+import me from './images/me.webp';
 //components
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import About from './components/About';
 import Footer from './components/Footer';
 
-import headerimg from './assets/maybe.jpg';
 
 function App(props) {
+
 	const location = useLocation();
 
 	const transitions = useTransition(
@@ -31,7 +33,8 @@ function App(props) {
 			config: config.gentle,
 		},
 	);
-	console.log(location);
+	
+
 	useEffect(() => {
 		props.history.push('/about');
 		return () => {};
@@ -48,16 +51,13 @@ function App(props) {
 				/>
 				<link rel='canonical' href='https://justinweb.dev/' />
 			</Helmet>
-			<div>
-				<HeaderDiv className='top-content'>
+				<HeaderStyles className='top-content'>
 					<div>
 						<h1>Justin McCutcheon</h1>
 						<h2>Full Stack Web Developer</h2>
 					</div>
-					<img src={justinimg} alt='me' />
-				</HeaderDiv>
-			</div>
-			{/* {location.pathname === '/' ? <About /> : null} */}
+					<img src={me} alt='me' />
+				</HeaderStyles>
 			<Router {...props}>
 				{transitions.map(({ item: location, props, key }) => (
 					<animated.div key={key} style={props}>
@@ -74,35 +74,5 @@ function App(props) {
 	);
 }
 
-const HeaderDiv = styled.section`
-	display: flex;
-	justify-content: flex-end;
-	padding: 3rem;
-	background-image: url(${headerimg});
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	z-index: 1;
-	top: 0;
-	width: 100%;
-	/* border-radius: 0 0 14px 14px; */
-
-	@media screen and (max-width: 1520px) {
-		align-items: center;
-		flex-direction: column-reverse;
-	}
-	div {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin: 2rem;
-	}
-	img {
-		align-self: center;
-		width: 20rem;
-		border-radius: 50%;
-		margin-right: 1rem;
-	}
-`;
 
 export default App;
