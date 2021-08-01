@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ProjectStyles from '../styles/ProjectStyles'
-
+import ProjectStyles from '../styles/ProjectStyles';
+import { Helmet } from 'react-helmet'; // changes head tag to improve seo
 // https://www.npmjs.com/package/react-card-flip
 import ReactCardFlip from 'react-card-flip';
 import { Icon } from 'semantic-ui-react';
@@ -25,7 +25,6 @@ import tipseaseLogo from '../images/tipseaseimg.png';
 import gitstatus from '../images/gitstatus.png';
 import qualityhub from '../images/qualityhub.webp';
 import interviewq from '../images/interviewq.webp';
-
 
 const Projects = (props) => {
 	const [isFlipped, setIsFlipped] = useState(false);
@@ -61,6 +60,15 @@ const Projects = (props) => {
 
 	return (
 		<ProjectStyles>
+			<Helmet>
+				<title>Justin McCutcheon Portfolio</title>
+				<meta charSet='utf-8' />
+				<meta
+					name='justin mccutcheon portfolio'
+					content='portfolio of software developer justin mccutcheon'
+				/>
+				<link rel='canonical' href='https://justinweb.dev' />
+			</Helmet>
 			<h2>Projects I've contributed to</h2>
 			<p>(Heroku free tier please be patient on first load)</p>
 			<section>
@@ -121,7 +129,7 @@ const Projects = (props) => {
 						<button>View on Github</button>
 					</a>
 					<a
-						href='https://www.allegedlytcg.com/'
+						href='https://allegedlytcg.herokuapp.com/'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
@@ -456,6 +464,5 @@ const Projects = (props) => {
 		</ProjectStyles>
 	);
 };
-
 
 export default Projects;

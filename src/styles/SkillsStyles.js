@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 const SkillsStyles = styled.main`
 	/* body-container */
 	margin: 0 auto;
@@ -51,4 +50,4 @@ const SkillsStyles = styled.main`
 	}
 `;
 
-export default SkillsStyles
+export default SkillsStyles;

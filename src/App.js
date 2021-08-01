@@ -49,7 +49,7 @@ function App(props) {
 					name='justin mccutcheon portfolio'
 					content='portfolio of software developer justin mccutcheon'
 				/>
-				<link rel='canonical' href='https://justinweb.dev/' />
+				<link rel='canonical' href='https://justinweb.dev' />
 			</Helmet>
 				<HeaderStyles className='top-content'>
 					<div>

@@ -1,29 +1,30 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'; // changes head tag to improve seo
 import ReactContactForm from 'react-mail-form';
-import AboutStyles from '../styles/AboutStyles'
+import AboutStyles from '../styles/AboutStyles';
 //images
 import dogaroos from '../images/dogaroos.webp';
 
 const About = () => {
 	return (
 		<AboutStyles>
+			<Helmet>
+				<title>Justin McCutcheon Portfolio</title>
+				<meta charSet='utf-8' />
+				<meta
+					name='justin mccutcheon portfolio'
+					content='portfolio of software developer justin mccutcheon'
+				/>
+				<link rel='canonical' href='https://justinweb.dev' />
+			</Helmet>
 			<h2>Welcome to my Portfolio</h2>
 			<section className='middle-content'>
 				<img src={dogaroos} alt='dogaroos' />
 				<div>
 					<h3>a little about me...</h3>
 					<p>
-						I am from Toledo, Ohio and finding Lambda school sparked
-						the biggest change in my life for the better. In Toledo
-						the job market is basically restaurants or
-						manufacturing.
-					</p>
-					<p>
-						Lambda School is where I acquired the skills and
-						confidence to work towards a better future. Over their 9
-						month bootcamp, I spent well over 40 hours a week fully
-						immersed in learning, reading, and developing web
-						applications.
+						I am from Toledo, Ohio and currently employed by Nexient
+						as a Software Developer
 					</p>
 					<p>
 						When I'm not working on improving my skills you can
@@ -47,7 +48,5 @@ const About = () => {
 		</AboutStyles>
 	);
 };
-
-
 
 export default About;
